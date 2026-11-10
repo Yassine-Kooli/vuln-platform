@@ -1,0 +1,34 @@
+{
+  "run": "20261110-205122_juice-shop_final",
+  "target": "juice-shop",
+  "label": "final",
+  "target_commit": "39b4686",
+  "stages": {
+    "sast-semgrep": "ok",
+    "sca-trivy-fs": "ok",
+    "sca-npm-audit": "ok",
+    "sca-trivy-image": "ok",
+    "dast-zap": "ok"
+  },
+  "duration_s": 748.7,
+  "total_findings": 503,
+  "by_tool": {
+    "npm-audit": 170,
+    "semgrep": 38,
+    "trivy-fs": 169,
+    "trivy-image": 109,
+    "zap": 17
+  },
+  "by_approach": {
+    "DAST": 17,
+    "SAST": 38,
+    "SCA": 448
+  },
+  "by_severity": {
+    "critical": 98,
+    "high": 169,
+    "info": 72,
+    "low": 27,
+    "medium": 137
+  }
+}

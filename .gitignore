@@ -1,0 +1,11 @@
+# Code source clonés des cibles (récupérés par targets/fetch_sources.py)
+targets/src/
+targets/crAPI/
+
+# Résultats d'exécution (archivés par la CI sous forme d'artefacts)
+results/
+
+__pycache__/
+*.pyc
+.env
+.sonar-token

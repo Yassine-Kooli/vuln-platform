@@ -1,0 +1,32 @@
+{
+  "_comment": "Cibles analysées. 'source' = code à analyser en SAST/SCA ; 'url' = cible DAST.",
+  "targets": {
+    "juice-shop": {
+      "url": "http://localhost:3000",
+      "source_repo": "https://github.com/juice-shop/juice-shop.git",
+      "source_ref": "v17.1.1",
+      "source_dir": "targets/src/juice-shop",
+      "npm_project": "targets/src/juice-shop",
+      "docker_image": "bkimminich/juice-shop:latest",
+      "openapi": null
+    },
+    "crapi": {
+      "url": "http://localhost:8888",
+      "source_repo": "https://github.com/OWASP/crAPI.git",
+      "source_ref": "develop",
+      "source_dir": "targets/crAPI",
+      "npm_project": null,
+      "docker_image": null,
+      "openapi": "http://localhost:8888/api/v3/api-docs"
+    },
+    "roundcube": {
+      "url": "http://localhost:8090",
+      "source_repo": "https://github.com/roundcube/roundcubemail.git",
+      "source_ref": "1.6.11",
+      "source_dir": "targets/src/roundcubemail",
+      "npm_project": null,
+      "docker_image": "roundcube/roundcubemail:latest-apache",
+      "openapi": null
+    }
+  }
+}

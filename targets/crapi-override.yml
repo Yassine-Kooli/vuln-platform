@@ -1,0 +1,6 @@
+# Surcharge locale du compose officiel crAPI : MailHog (8025) est déjà utilisé sur la machine hôte.
+# Le port web de crAPI reste 8888. Utilisé par deploy_crapi.sh.
+services:
+  mailhog:
+    ports: !override
+      - "127.0.0.1:8026:8025"

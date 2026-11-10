@@ -1,0 +1,80 @@
+{
+  "_comment": "Vérité terrain : vulnérabilités connues de chaque cible, décrites par CWE. Source : défis documentés de OWASP Juice Shop (https://pwning.owasp-juice.shop). Juice Shop : À VÉRIFIER contre la liste officielle des défis. crAPI : catégories OWASP API Top 10 documentées par le projet, à compléter avec les challenges réels. 'location_pattern' (optionnel) est une regex appliquée à l'emplacement de la finding (fichier pour SAST, URL pour DAST).",
+  "juice-shop": {
+    "vulnerabilities": [
+      {
+        "id": "JS-SQLI-LOGIN",
+        "cwe": "CWE-89",
+        "name": "Injection SQL sur la connexion",
+        "location_pattern": "login"
+      },
+      {
+        "id": "JS-XSS",
+        "cwe": "CWE-79",
+        "name": "Cross-Site Scripting (reflété / DOM)",
+        "location_pattern": null
+      },
+      {
+        "id": "JS-PATH-TRAVERSAL",
+        "cwe": "CWE-22",
+        "name": "Traversée de répertoire (/ftp)",
+        "location_pattern": "ftp"
+      },
+      {
+        "id": "JS-XXE",
+        "cwe": "CWE-611",
+        "name": "XML External Entity (upload XML)",
+        "location_pattern": "file-?[Uu]pload"
+      },
+      {
+        "id": "JS-OPEN-REDIRECT",
+        "cwe": "CWE-601",
+        "name": "Redirection ouverte",
+        "location_pattern": "redirect"
+      },
+      {
+        "id": "JS-HARDCODED-KEY",
+        "cwe": "CWE-798",
+        "name": "Secrets / clés codés en dur",
+        "location_pattern": null
+      }
+    ]
+  },
+  "roundcube": {
+    "vulnerabilities": []
+  },
+  "crapi": {
+    "vulnerabilities": [
+      {
+        "id": "CA-BOLA",
+        "cwe": "CWE-639",
+        "name": "Contournement d'autorisation objet (BOLA / API1)",
+        "location_pattern": null
+      },
+      {
+        "id": "CA-MASS-ASSIGN",
+        "cwe": "CWE-915",
+        "name": "Affectation de masse (mass assignment)",
+        "location_pattern": null
+      },
+      {
+        "id": "CA-SSRF",
+        "cwe": "CWE-918",
+        "name": "Falsification de requête côté serveur (SSRF)",
+        "location_pattern": null
+      },
+      {
+        "id": "CA-NO-RATE-LIMIT",
+        "cwe": "CWE-307",
+        "name": "Absence de limitation de tentatives (OTP / login)",
+        "location_pattern": null
+      },
+      {
+        "id": "CA-DATA-EXPOSURE",
+        "cwe": "CWE-200",
+        "name": "Exposition excessive de données",
+        "location_pattern": null
+      }
+    ]
+  }
+}

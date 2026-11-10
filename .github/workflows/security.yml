@@ -1,0 +1,133 @@
+name: Analyse de sécurité (SAST / SCA / DAST)
+
+# Déclenchement automatique : à chaque push / pull request qui modifie le code,
+# les règles, la configuration ou le pipeline lui-même.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "rules/**"
+      - "zap/**"
+      - "scanners/**"
+      - "normalizer/**"
+      - "pipeline.py"
+      - "config/**"
+      - "targets/**"
+      - "docker-compose.yml"
+      - ".github/workflows/security.yml"
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      label:
+        description: "Nom court de l'exécution (ex: avant, apres)"
+        default: "ci"
+
+permissions:
+  contents: read
+
+jobs:
+  sast:
+    name: SAST (Semgrep)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Récupérer le code des cibles
+        run: python3 targets/fetch_sources.py --only juice-shop
+      - name: Semgrep (règles communautaires + règles maison)
+        run: python3 pipeline.py --target juice-shop --stages sast --label "${{ github.event.inputs.label || 'ci' }}"
+      - name: Archiver les résultats SAST
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sast-results
+          path: results/
+          retention-days: 90
+
+  sca:
+    name: SCA (Trivy + npm audit)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Récupérer le code des cibles
+        run: python3 targets/fetch_sources.py --only juice-shop
+      - name: Trivy fs + npm audit
+        run: python3 pipeline.py --target juice-shop --stages sca --label "${{ github.event.inputs.label || 'ci' }}"
+      - name: Archiver les résultats SCA
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sca-results
+          path: results/
+          retention-days: 90
+
+  dast:
+    name: DAST (OWASP ZAP)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Démarrer les cibles
+        run: |
+          docker compose up -d juice-shop
+          for i in $(seq 1 60); do
+            if curl -fs http://localhost:3000 >/dev/null; then echo "Juice Shop prêt"; exit 0; fi
+            sleep 3
+          done
+          echo "Juice Shop ne répond pas"; docker compose logs; exit 1
+      - name: ZAP (spider, spider AJAX, scan actif)
+        run: python3 pipeline.py --target juice-shop --stages dast --label "${{ github.event.inputs.label || 'ci' }}"
+      - name: Archiver les résultats DAST
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dast-results
+          path: results/
+          retention-days: 90
+      - name: Arrêter les cibles
+        if: always()
+        run: docker compose down
+
+  rapport:
+    name: Normalisation, métriques et rapport
+    runs-on: ubuntu-latest
+    needs: [sast, sca, dast]
+    if: always()
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Récupérer les résultats de toutes les analyses
+        uses: actions/download-artifact@v4
+        with:
+          path: results-ci/
+      - name: Fusion des findings et métriques
+        run: |
+          python3 reporting/merge_runs.py results-ci/ results/ci-merged
+          python3 metrics/evaluate.py results/ci-merged --target juice-shop
+          python3 reporting/report.py results/ci-merged
+      - name: Comparaison avec la référence (si présente)
+        run: |
+          if [ -f baseline/findings.json ]; then
+            mkdir -p results/baseline && cp baseline/findings.json results/baseline/
+            python3 reporting/compare.py results/baseline results/ci-merged
+          else
+            echo "Pas de référence dans baseline/ : comparaison ignorée"
+          fi
+      - name: Publier le rapport
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapport-securite
+          path: results/ci-merged/
+          retention-days: 90

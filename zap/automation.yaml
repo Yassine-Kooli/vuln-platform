@@ -1,0 +1,42 @@
+# Plan ZAP Automation Framework (gabarit).
+# __TARGET_URL__ est remplacé par scanners/dast_zap.py avant exécution.
+env:
+  contexts:
+    - name: target
+      urls:
+        - "__TARGET_URL__"
+      includePaths:
+        - "__TARGET_URL__.*"
+  parameters:
+    failOnError: false
+    failOnWarning: false
+    progressToStdout: true
+
+jobs:
+  - type: spider
+    parameters:
+      context: target
+      maxDuration: 5
+  - type: spiderAjax            # Juice Shop et crAPI sont des SPA : le spider classique ne suffit pas
+    parameters:
+      context: target
+      maxDuration: 5
+      browserId: htmlunit
+  - type: passiveScan-wait
+    parameters:
+      maxDuration: 5
+  - type: activeScan
+    parameters:
+      context: target
+      maxRuleDurationInMins: 2
+      maxScanDurationInMins: 15
+  - type: report
+    parameters:
+      template: traditional-json
+      reportDir: /zap/wrk
+      reportFile: zap.json
+  - type: report
+    parameters:
+      template: traditional-html
+      reportDir: /zap/wrk
+      reportFile: zap.html

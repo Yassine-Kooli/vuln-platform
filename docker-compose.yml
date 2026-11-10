@@ -1,0 +1,34 @@
+
+# Environnement de test : applications web volontairement vulnérables.
+# Lancement : docker compose up -d
+# (crAPI est déployé séparément par targets/deploy_crapi.sh, car son compose officiel est multi-services.)
+
+services:
+  juice-shop:
+    image: ${JUICE_SHOP_IMAGE:-bkimminich/juice-shop:latest}
+    container_name: vp-juice-shop
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+  roundcube:
+    image: ${ROUNDCUBE_IMAGE:-roundcube/roundcubemail:latest-apache}
+    container_name: vp-roundcube
+    environment:
+      - ROUNDCUBEMAIL_DEFAULT_HOST=ssl://imap.example.com
+      - ROUNDCUBEMAIL_SMTP_SERVER=tls://smtp.example.com
+      - ROUNDCUBEMAIL_DB_TYPE=sqlite
+    ports:
+      - "8090:80"
+    restart: unless-stopped
+
+  # SonarQube (SAST) : profil optionnel, démarré par scanners/sast_sonarqube.py ou `docker compose --profile sonar up -d`.
+  sonarqube:
+    image: ${SONARQUBE_IMAGE:-sonarqube:community}
+    container_name: vp-sonarqube
+    profiles: ["sonar"]
+    environment:
+      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
+    ports:
+      - "9000:9000"
+    restart: unless-stopped

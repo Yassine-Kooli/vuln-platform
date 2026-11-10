@@ -1,0 +1,5032 @@
+[
+  {
+    "id": "ccababa18ce14c9e",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1096365",
+    "title": "crypto-js PBKDF2 1,000 times weaker than specified in 1993 and 1.3M times weaker than current standard",
+    "severity": "critical",
+    "location": "crypto-js@<=4.1.1",
+    "cwe": "CWE-327"
+  },
+  {
+    "id": "a01e5407112d0e1a",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1138770",
+    "title": "crypto-js: Insufficient Entropy in Cryptographic Secret Generation via Vulnerable CryptoJS Dependency Chain",
+    "severity": "critical",
+    "location": "crypto-js@<=4.1.1",
+    "cwe": "CWE-331"
+  },
+  {
+    "id": "bfef866c4c895b1e",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1122670",
+    "title": "Decompress: Archive extraction can create files and links outside of the target directory",
+    "severity": "critical",
+    "location": "decompress@*",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "14947491da137833",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1240094",
+    "title": "@xhmikosr/decompress: Path traversal via symlink chain",
+    "severity": "critical",
+    "location": "decompress@*",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "73ffb8fe556ddf4f",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1109540",
+    "title": "form-data uses unsafe random function in form-data for choosing boundary",
+    "severity": "critical",
+    "location": "form-data@<=2.5.5",
+    "cwe": "CWE-330"
+  },
+  {
+    "id": "e44aaf33a06b4330",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1090918",
+    "title": "Verification Bypass in jsonwebtoken",
+    "severity": "critical",
+    "location": "jsonwebtoken@<=8.5.1",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "ea9b4078ebcd6fa6",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1100657",
+    "title": "libxmljs2 vulnerable to type confusion when parsing specially crafted XML",
+    "severity": "critical",
+    "location": "libxmljs2@<=0.35.0",
+    "cwe": "CWE-843"
+  },
+  {
+    "id": "8ac5dff627e06ba2",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1100552",
+    "title": "libxmljs vulnerable to type confusion when parsing specially crafted XML ",
+    "severity": "critical",
+    "location": "libxmljs@*",
+    "cwe": "CWE-843"
+  },
+  {
+    "id": "32c3022b7a48e0d8",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1100659",
+    "title": "libxmljs vulnerable to type confusion when parsing specially crafted XML",
+    "severity": "critical",
+    "location": "libxmljs@*",
+    "cwe": "CWE-843"
+  },
+  {
+    "id": "4e8dbf5c48eb874c",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1106918",
+    "title": "Prototype Pollution in lodash",
+    "severity": "critical",
+    "location": "lodash@<=4.17.20",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "430f47027095754a",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1086801",
+    "title": "Command Injection in marsdb",
+    "severity": "critical",
+    "location": "marsdb@*",
+    "cwe": "CWE-77"
+  },
+  {
+    "id": "a6b07747caa1ef83",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1123940",
+    "title": "node-tar: Decompression/parse DoS via unlimited input",
+    "severity": "critical",
+    "location": "tar@<=7.5.20",
+    "cwe": "CWE-770"
+  },
+  {
+    "id": "8c7619e45dfce062",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1094568",
+    "title": "vm2 Sandbox Escape vulnerability",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-74"
+  },
+  {
+    "id": "19f7e73873e72054",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1109577",
+    "title": "vm2 Sandbox Escape vulnerability",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-78"
+  },
+  {
+    "id": "0843e70356f85c1a",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1111794",
+    "title": "vm2 Sandbox Escape vulnerability",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "df86ec0f2cabfaee",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1112668",
+    "title": "vm2 has a Sandbox Escape",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "d8eff0cf7c988840",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1117641",
+    "title": "VM2 Has Sandbox Breakout Through Promise Species",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "ebf05ee48f925ab7",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1118977",
+    "title": "vm2: Mutable Proxies for Host Intrinsic Prototypes Allows Sandbox Escape",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "23a61b77135bc076",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1118978",
+    "title": "vm2 Access to Host Object Enables Sandbox Escape",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "e090f51d27d1de1f",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1118979",
+    "title": "vm2 has a Sandbox Escape Vulnerability",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "f3f698987cc380da",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1119002",
+    "title": "vm2 Has a Sandbox Breakout Using Async Generator",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-668"
+  },
+  {
+    "id": "a37ef1b6576e8cdc",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1120123",
+    "title": "VM2 Has a WASM Sandbox Escape",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "27c39d0608f3864a",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1120683",
+    "title": "NodeVM builtin denylist bypass via process and inspector/promises allows host code execution",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "ad180c207b5db694",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1120684",
+    "title": "vm2 sandbox escape via JSPI-backed Promise `.finally()` species bypass",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "2d1ad1a60a1a2496",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1120685",
+    "title": "vm2 has a CVE-2023-37903 patch bypass: nesting:true without explicit require still allows full RCE",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "2de669d907c51777",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1120686",
+    "title": "vm2 is Vulnerable to Sandbox Breakout Through Promise Species",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "1375c7480d49ec9f",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1120687",
+    "title": "vm2 has a Sandbox Escape issue",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "742f40f522ce45e8",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1145105",
+    "title": "VM2 has Missing Error.cause Sanitization that Enables Sandbox Escape to RCE",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "55a64caa1a00f664",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1147830",
+    "title": "vm2: Sandbox Breakout Using Dangerous Host Proto Mutators",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "ec75e1561a196aa6",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1240855",
+    "title": "vm2: NodeVM builtin allowlist bypass via node:test.run() execArgv allows sandbox escape",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "933d6b7ef5ad3d2e",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1240860",
+    "title": "vm2: NodeVM node:-prefixed negative builtin deny bypass exposes child_process",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-269"
+  },
+  {
+    "id": "30ad8b26d852ebd3",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1241226",
+    "title": "vm2: NodeVM custom resolution bypasses external path boundaries",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-863"
+  },
+  {
+    "id": "a4c5d1f4cb9a16cc",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1241265",
+    "title": "vm2: Sandbox Escape (NodeVM)",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "027a529fcb764ab7",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1241268",
+    "title": "vm2 sandbox escape to host RCE via revisited host-wrapped AggregateError bypassing Error sanitization cycle short-circuit",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "d0a2aff470b7474c",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1241273",
+    "title": "vm2: NodeVM `require.external` without an explicit `require.root` grants unrestricted host filesystem access and full RCE",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "fd5c1a2a689450a4",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1241274",
+    "title": "vm2: Sandboxed code can read and write host-realm memory via Node's shared Buffer pool",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-200"
+  },
+  {
+    "id": "2320df861a7434ab",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1241432",
+    "title": "vm2 contains a sandbox escape vulnerability",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "cc582eeb4b2592ba",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1241653",
+    "title": "vm2 Custom Module Resolver Can Bypass the External Package Allowlist by Loading a Colliding Host Package",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-706"
+  },
+  {
+    "id": "7e64bdf4fd56aca6",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1244537",
+    "title": "vm2 has Sandbox Breakout Through Null Proto Exception",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-653"
+  },
+  {
+    "id": "9ee33635c337eabd",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1244538",
+    "title": "vm2 has sandbox breakout via `neutralizeArraySpeciesBatch`",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-668"
+  },
+  {
+    "id": "83b78b6eda425641",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1244539",
+    "title": "vm2 NodeVM `nesting: true` bypasses `require: false` allowing sandbox escape and arbitrary OS command execution",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-284"
+  },
+  {
+    "id": "d810736ef7dd3528",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1244544",
+    "title": "VM2 Has a Sandbox Escape Issue via SuppressedError",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "68a0c05fb3b738b2",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1244545",
+    "title": "VM2 Sandbox Breakout Through __lookupGetter__",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "b3b05eda813bfd84",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1244546",
+    "title": "VM2 Has Sandbox Breakout Through Inspect Function",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "b1c93a70b24e499b",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1244795",
+    "title": "vm2: NodeVM `builtin: ['*']` exposes `os` and `dns` — process-wide observability reads AND writes that hijack the host (sibling class of GHSA-9g8x-92q2-p28f)",
+    "severity": "critical",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-200"
+  },
+  {
+    "id": "c24356f52b186c90",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2023-46233",
+    "title": "crypto-js: PBKDF2 1,000 times weaker than specified in 1993 and 1.3M times weaker than current standard",
+    "severity": "critical",
+    "location": "crypto-js@3.3.0",
+    "cwe": "CWE-328"
+  },
+  {
+    "id": "bed44e745455bb27",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-71851",
+    "title": "crypto-js: crypto-js: Insufficient Entropy in Cryptographic Secret Generation via Vulnerable CryptoJS Dependency Chain",
+    "severity": "critical",
+    "location": "crypto-js@3.3.0",
+    "cwe": "CWE-331"
+  },
+  {
+    "id": "d53ac74be53c3629",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-101894",
+    "title": "@xhmikosr/decompress: @xhmikosr/decompress: Path traversal via symlink chain",
+    "severity": "critical",
+    "location": "decompress@4.2.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "2c0bba9b043107d8",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-53486",
+    "title": "decompress: @xhmikosr/decompress: Decompress: Arbitrary file read/write via crafted archive extraction",
+    "severity": "critical",
+    "location": "decompress@4.2.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "2d4992d4dd471c34",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2025-7783",
+    "title": "form-data: Unsafe random function in form-data",
+    "severity": "critical",
+    "location": "form-data@2.3.3",
+    "cwe": "CWE-330"
+  },
+  {
+    "id": "381af7080e0c9354",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2015-9235",
+    "title": "nodejs-jsonwebtoken: verification step bypass with an altered token",
+    "severity": "critical",
+    "location": "jsonwebtoken@0.1.0",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "30b668564bdc3028",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2015-9235",
+    "title": "nodejs-jsonwebtoken: verification step bypass with an altered token",
+    "severity": "critical",
+    "location": "jsonwebtoken@0.4.0",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "addce3da63952891",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2024-34391",
+    "title": "libxmljs vulnerable to type confusion when parsing specially crafted XML",
+    "severity": "critical",
+    "location": "libxmljs@1.0.11",
+    "cwe": "CWE-843"
+  },
+  {
+    "id": "98c59d979a72efd9",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2024-34392",
+    "title": "libxmljs vulnerable to type confusion when parsing specially crafted XML ",
+    "severity": "critical",
+    "location": "libxmljs@1.0.11",
+    "cwe": "CWE-843"
+  },
+  {
+    "id": "41bb9047c191b3e5",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2019-10744",
+    "title": "nodejs-lodash: prototype pollution in defaultsDeep function leading to modifying properties",
+    "severity": "critical",
+    "location": "lodash@2.4.2",
+    "cwe": "CWE-1321"
+  },
+  {
+    "id": "3fbbb2368831d44a",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "GHSA-5mrr-rgp6-x4gr",
+    "title": "Command Injection in marsdb",
+    "severity": "critical",
+    "location": "marsdb@0.6.11",
+    "cwe": null
+  },
+  {
+    "id": "0b017c79be7f28f6",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-59873",
+    "title": "tar: node-tar: Denial of Service via crafted gzip bomb",
+    "severity": "critical",
+    "location": "tar@4.4.19",
+    "cwe": "CWE-770"
+  },
+  {
+    "id": "42cb77e30cbe8221",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-59873",
+    "title": "tar: node-tar: Denial of Service via crafted gzip bomb",
+    "severity": "critical",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-770"
+  },
+  {
+    "id": "93bbdac9098c89cf",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2023-32314",
+    "title": "vm2: Sandbox Escape",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-74"
+  },
+  {
+    "id": "259cf0c4af23bf9b",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2023-37466",
+    "title": "vm2: Promise handler sanitization can be bypassed allowing attackers to escape the sandbox and run arbitrary code",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "0d5f6ddbfa0c3da0",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2023-37903",
+    "title": "vm2: custom inspect function allows attackers to escape the sandbox and run arbitrary code",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-78"
+  },
+  {
+    "id": "8179f19fcead330e",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-100721",
+    "title": "vm2: vm2 before 3.12.2 Authorization Bypass via Custom Resolver",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-863"
+  },
+  {
+    "id": "f43f389997dc7969",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-22709",
+    "title": "vm2 has a Sandbox Escape",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "cf0af73ac901f299",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-24118",
+    "title": "vm2: vm2: Arbitrary code execution due to sandbox breakout",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "aec5347204bf9a15",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-24120",
+    "title": "vm2: vm2: Arbitrary code execution due to sandbox escape vulnerability",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "04a75822ef087308",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-24781",
+    "title": "vm2: vm2: Arbitrary code execution via sandbox breakout through inspect function",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "b81b4a382a23dc56",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-26332",
+    "title": "vm2: vm2: Arbitrary code execution via SuppressedError sandbox escape",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "da66604408e9c88a",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-26956",
+    "title": "vm2: Node.js: vm2: Arbitrary code execution via sandbox escape",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "333e7b23e090d2a1",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-43997",
+    "title": "vm2: vm2: Arbitrary code execution via sandbox escape",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "8a88eef4ca4d12e0",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-44005",
+    "title": "vm2: vm2: Sandbox Escape leading to Arbitrary Code Execution",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "abc2c4de2a6afe46",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-44006",
+    "title": "vm2: vm2: Sandbox escape via arbitrary prototype access leading to arbitrary code execution",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "d5d9e84af48bdd6c",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-44007",
+    "title": "vm2: vm2: Arbitrary code execution via nested NodeVM bypass",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-284"
+  },
+  {
+    "id": "bdb81ee3cc1dc489",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-44008",
+    "title": "vm2: vm2: Arbitrary code execution due to sandbox escape",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-668"
+  },
+  {
+    "id": "1b345563d61d4cc7",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-44009",
+    "title": "vm2: vm2: Arbitrary Code Execution via Sandbox Escape",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-668"
+  },
+  {
+    "id": "c3475ab5ed3d2844",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-45411",
+    "title": "vm2: vm2: Arbitrary Code Execution due to sandbox escape vulnerability",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-668"
+  },
+  {
+    "id": "d9fab166e016ffed",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-47131",
+    "title": "vm2: vm2: Arbitrary code execution via sandbox escape vulnerability",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "2c5e828df60e02f1",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-47137",
+    "title": "vm2: vm2: Sandbox escape leading to arbitrary code execution via security bypass",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "d8c3d2b6e5d57228",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-47140",
+    "title": "vm2: vm2: Arbitrary code execution due to incomplete sandbox restrictions",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "b6bde374a953db8f",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-47208",
+    "title": "vm2: vm2: Sandbox Breakout Using Promise Species",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "b1a6512f33c7ebbc",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-47210",
+    "title": "vm2: vm2: Arbitrary code execution via sandbox escape when executing untrusted code with async support.",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "dea8d7702c12400a",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-47686",
+    "title": "vm2: vm2: Missing Error.cause Sanitization Enables VM2 Sandbox Escape to RCE",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "e4acb33c25aec3da",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-47698",
+    "title": "vm2: vm2: Sandbox Breakout Using Dangerous Host Proto Mutators",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "b6e5437340199c44",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92934",
+    "title": "vm2: vm2 before 3.11.8 Sandbox Escape RCE via AggregateError",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "873ab6e2055c22a9",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92946",
+    "title": "vm2: vm2 before 3.11.7 Remote Code Execution via require.external",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "cb7295368f1801c5",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92947",
+    "title": "vm2: vm2 before 3.11.7 Memory Disclosure via Buffer Pool",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-200"
+  },
+  {
+    "id": "07d9f03daab7199f",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92948",
+    "title": "vm2: vm2 3.9.6 through 3.11.5 Sandbox Escape via node:test",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "55e2b71af161bd2d",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92951",
+    "title": "vm2: vm2 before 3.11.7 Module Allowlist Bypass via Custom Resolver",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-706"
+  },
+  {
+    "id": "7dd262e56fe23be2",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92955",
+    "title": "vm2: vm2 before 3.11.8 Sandbox Escape via NodeVM",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-913"
+  },
+  {
+    "id": "153cc9bed37246b4",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92957",
+    "title": "vm2: vm2 before 3.11.7 Authentication Bypass via node: Prefix",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-269"
+  },
+  {
+    "id": "913c59f19b3db8dc",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-93605",
+    "title": "vm2: vm2 NodeVM before 3.12.1 Remote Code Execution via child_process",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "b953f457b033c1d2",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "GHSA-m5w8-4gq2-6f8x",
+    "title": "vm2: NodeVM `builtin: ['*']` exposes `os` and `dns` — process-wide observability reads AND writes that hijack the host (sibling class of GHSA-9g8x-92q2-p28f)",
+    "severity": "critical",
+    "location": "vm2@3.9.17",
+    "cwe": null
+  },
+  {
+    "id": "c95de4237ca3190b",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2023-46233",
+    "title": "crypto-js: PBKDF2 1,000 times weaker than specified in 1993 and 1.3M times weaker than current standard",
+    "severity": "critical",
+    "location": "crypto-js@3.3.0",
+    "cwe": "CWE-328"
+  },
+  {
+    "id": "e87d788f3bb3c427",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-71851",
+    "title": "crypto-js: crypto-js: Insufficient Entropy in Cryptographic Secret Generation via Vulnerable CryptoJS Dependency Chain",
+    "severity": "critical",
+    "location": "crypto-js@3.3.0",
+    "cwe": "CWE-331"
+  },
+  {
+    "id": "5b0aca83551b8857",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2015-9235",
+    "title": "nodejs-jsonwebtoken: verification step bypass with an altered token",
+    "severity": "critical",
+    "location": "jsonwebtoken@0.1.0",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "11b49bb43eca7320",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2015-9235",
+    "title": "nodejs-jsonwebtoken: verification step bypass with an altered token",
+    "severity": "critical",
+    "location": "jsonwebtoken@0.4.0",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "72d501a0cb2b888d",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2019-10744",
+    "title": "nodejs-lodash: prototype pollution in defaultsDeep function leading to modifying properties",
+    "severity": "critical",
+    "location": "lodash@2.4.2",
+    "cwe": "CWE-1321"
+  },
+  {
+    "id": "0bb60dc0a1d9d38c",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "GHSA-5mrr-rgp6-x4gr",
+    "title": "Command Injection in marsdb",
+    "severity": "critical",
+    "location": "marsdb@0.6.11",
+    "cwe": null
+  },
+  {
+    "id": "f5b13c7420e1cf89",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-59873",
+    "title": "tar: node-tar: Denial of Service via crafted gzip bomb",
+    "severity": "critical",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-770"
+  },
+  {
+    "id": "6af7d90cf2fcc7da",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1224698",
+    "title": "@cyclonedx/cyclonedx-npm: Shell Injection via Unsanitized --workspace Argument on Windows",
+    "severity": "high",
+    "location": "@cyclonedx/cyclonedx-npm@<=5.0.0",
+    "cwe": "CWE-78"
+  },
+  {
+    "id": "0c13b10a08191b9a",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1098094",
+    "title": "Uncontrolled resource consumption in braces",
+    "severity": "high",
+    "location": "braces@<3.0.3",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "69842e4a6e0503fd",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1243857",
+    "title": "decode-uri-component vulnerable to denial of service via quadratic replacement of percent-encoded runs",
+    "severity": "high",
+    "location": "decode-uri-component@<=0.5.0",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "37a428f1281d3314",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1123943",
+    "title": "Socket.IO: Engine.IO Polling Transport Connection Exhaustion",
+    "severity": "high",
+    "location": "engine.io@0.7.8 - 0.7.9 || 1.8.0 - 6.6.6",
+    "cwe": "CWE-404"
+  },
+  {
+    "id": "7764153dcb7808a1",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1090200",
+    "title": "Authorization bypass in express-jwt",
+    "severity": "high",
+    "location": "express-jwt@<=7.7.7",
+    "cwe": "CWE-285"
+  },
+  {
+    "id": "def36a23a130b4db",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1139346",
+    "title": "extract-zip unvalidated symlink path traversal",
+    "severity": "high",
+    "location": "extract-zip@*",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "ffd98b7d28e7119a",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1193685",
+    "title": "extract-zip allows arbitrary file writes through symlink archive entries",
+    "severity": "high",
+    "location": "extract-zip@*",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "09fbbcc7681ace8a",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1120745",
+    "title": "form-data: CRLF injection in form-data via unescaped multipart field names and filenames",
+    "severity": "high",
+    "location": "form-data@<=2.5.5",
+    "cwe": "CWE-93"
+  },
+  {
+    "id": "fa99d9091394cbcc",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1102456",
+    "title": "http-cache-semantics vulnerable to Regular Expression Denial of Service",
+    "severity": "high",
+    "location": "http-cache-semantics@<4.1.1",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "fdb8d17248fe044d",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1123911",
+    "title": "js-yaml: YAML merge-key chains can force quadratic CPU consumption",
+    "severity": "high",
+    "location": "js-yaml@<=3.15.1 || 4.0.0 - 4.3.1",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "8a5b258ce3f9cfb8",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1123912",
+    "title": "js-yaml: YAML merge-key chains can force quadratic CPU consumption",
+    "severity": "high",
+    "location": "js-yaml@<=3.15.1 || 4.0.0 - 4.3.1",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "a4581305ed7d7977",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1138114",
+    "title": "JS-YAML: Quadratic CPU consumption in !!omap resolution (3.x and 4.x) — CVE-2026-59870 fix not backported",
+    "severity": "high",
+    "location": "js-yaml@<=3.15.1 || 4.0.0 - 4.3.1",
+    "cwe": "CWE-407"
+  },
+  {
+    "id": "eec1fc85fd025a27",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1138115",
+    "title": "JS-YAML: Quadratic CPU consumption in !!omap resolution (3.x and 4.x) — CVE-2026-59870 fix not backported",
+    "severity": "high",
+    "location": "js-yaml@<=3.15.1 || 4.0.0 - 4.3.1",
+    "cwe": "CWE-407"
+  },
+  {
+    "id": "8d019b63cb7fbb0f",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1193726",
+    "title": "js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources",
+    "severity": "high",
+    "location": "js-yaml@<=3.15.1 || 4.0.0 - 4.3.1",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "0ea8fbe60de81baf",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1193727",
+    "title": "js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources",
+    "severity": "high",
+    "location": "js-yaml@<=3.15.1 || 4.0.0 - 4.3.1",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "2d44e72b618b5827",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1097690",
+    "title": "jsonwebtoken unrestricted key type could lead to legacy keys usage ",
+    "severity": "high",
+    "location": "jsonwebtoken@<=8.5.1",
+    "cwe": "CWE-327"
+  },
+  {
+    "id": "1852eb8a09bbf5e1",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1087397",
+    "title": "Forgeable Public/Private Tokens in jws",
+    "severity": "high",
+    "location": "jws@<=3.2.2",
+    "cwe": null
+  },
+  {
+    "id": "1e2faa0e47140fb5",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1111244",
+    "title": "auth0/node-jws Improperly Verifies HMAC Signature",
+    "severity": "high",
+    "location": "jws@<=3.2.2",
+    "cwe": "CWE-347"
+  },
+  {
+    "id": "487f2ff323c8848e",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1111708",
+    "title": "libxmljs has segmentation fault, potentially leading to a denial-of-service (DoS)",
+    "severity": "high",
+    "location": "libxmljs@*",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "8308947b1b3aa715",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1106906",
+    "title": "Prototype Pollution in lodash",
+    "severity": "high",
+    "location": "lodash.set@*",
+    "cwe": "CWE-770"
+  },
+  {
+    "id": "9b424715dc41e978",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1106913",
+    "title": "Command Injection in lodash",
+    "severity": "high",
+    "location": "lodash@<=4.17.20",
+    "cwe": "CWE-77"
+  },
+  {
+    "id": "3f9f699e7720435f",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1106914",
+    "title": "Prototype Pollution in lodash",
+    "severity": "high",
+    "location": "lodash@<=4.17.20",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "7793fd9eac8d5a46",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1096485",
+    "title": "minimatch ReDoS vulnerability",
+    "severity": "high",
+    "location": "minimatch@<=3.1.3 || 7.0.0 - 11.0.0",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "8a3f6b280eed2525",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113459",
+    "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+    "severity": "high",
+    "location": "minimatch@<=3.1.3 || 7.0.0 - 11.0.0",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "16685f4a8f18e25e",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113465",
+    "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+    "severity": "high",
+    "location": "minimatch@<=3.1.3 || 7.0.0 - 11.0.0",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "98b83b267d7ab939",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113538",
+    "title": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+    "severity": "high",
+    "location": "minimatch@<=3.1.3 || 7.0.0 - 11.0.0",
+    "cwe": "CWE-407"
+  },
+  {
+    "id": "fa1e3e9f3bdf7bcb",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113544",
+    "title": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+    "severity": "high",
+    "location": "minimatch@<=3.1.3 || 7.0.0 - 11.0.0",
+    "cwe": "CWE-407"
+  },
+  {
+    "id": "6dacc755a2e1fb48",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113546",
+    "title": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+    "severity": "high",
+    "location": "minimatch@<=3.1.3 || 7.0.0 - 11.0.0",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "e67ec1633c399959",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113552",
+    "title": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+    "severity": "high",
+    "location": "minimatch@<=3.1.3 || 7.0.0 - 11.0.0",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "3f53c2ddb5243675",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1091723",
+    "title": "Regular Expression Denial of Service in moment",
+    "severity": "high",
+    "location": "moment@<=2.29.1",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "6b789c076422fc4b",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1109571",
+    "title": "Path Traversal: 'dir/../../filename' in moment.locale",
+    "severity": "high",
+    "location": "moment@<=2.29.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "1d2d556de460c7d4",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1138811",
+    "title": "nanoid: non-secure generators can loop indefinitely with negative size",
+    "severity": "high",
+    "location": "nanoid@<=3.3.17",
+    "cwe": "CWE-835"
+  },
+  {
+    "id": "09547ac4bef0e7be",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1139427",
+    "title": "nanoid: custom generators can loop indefinitely when size is zero",
+    "severity": "high",
+    "location": "nanoid@<=3.3.17",
+    "cwe": "CWE-835"
+  },
+  {
+    "id": "adba51adc709cfb5",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1153189",
+    "title": "nanoid: Integer Overflow or Wraparound",
+    "severity": "high",
+    "location": "nanoid@<=3.3.17",
+    "cwe": "CWE-190"
+  },
+  {
+    "id": "e1492b0efc299c81",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1097161",
+    "title": "Sanitize-html Vulnerable To REDoS Attacks",
+    "severity": "high",
+    "location": "sanitize-html@<=2.17.7",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "c30567ad02fba077",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113686",
+    "title": "Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()",
+    "severity": "high",
+    "location": "serialize-javascript@<=7.1.2",
+    "cwe": "CWE-96"
+  },
+  {
+    "id": "e9f339bac8091197",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1115154",
+    "title": "socket.io allows an unbounded number of binary attachments",
+    "severity": "high",
+    "location": "socket.io-parser@4.0.0 - 4.2.6",
+    "cwe": "CWE-754"
+  },
+  {
+    "id": "62f3d56b196669fb",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1130713",
+    "title": "Socket.IO: Zero-attachment Memory Exhaustion",
+    "severity": "high",
+    "location": "socket.io-parser@4.0.0 - 4.2.6",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "a420e3ec18cdeaf2",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1112659",
+    "title": "node-tar Vulnerable to Arbitrary File Creation/Overwrite via Hardlink Path Traversal",
+    "severity": "high",
+    "location": "tar@<=7.5.20",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "49d3fb2bb2618e8a",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113300",
+    "title": "node-tar is Vulnerable to Arbitrary File Overwrite and Symlink Poisoning via Insufficient Path Sanitization",
+    "severity": "high",
+    "location": "tar@<=7.5.20",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "3eac5a4c4ac7d031",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113375",
+    "title": "Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction",
+    "severity": "high",
+    "location": "tar@<=7.5.20",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "be325d3e4d0acf97",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1114200",
+    "title": "tar has Hardlink Path Traversal via Drive-Relative Linkpath",
+    "severity": "high",
+    "location": "tar@<=7.5.20",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "5d0caf2cd115350f",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1114302",
+    "title": "node-tar Symlink Path Traversal via Drive-Relative Linkpath",
+    "severity": "high",
+    "location": "tar@<=7.5.20",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "892d22a169db7eba",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1114680",
+    "title": "Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS",
+    "severity": "high",
+    "location": "tar@<=7.5.20",
+    "cwe": "CWE-176"
+  },
+  {
+    "id": "4141e77fc5ee6a0c",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1123941",
+    "title": "node-tar: Negative tar entry size causes infinite loop in archive replace",
+    "severity": "high",
+    "location": "tar@<=7.5.20",
+    "cwe": "CWE-835"
+  },
+  {
+    "id": "a196e585577d57be",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1145647",
+    "title": "node-tar: Uncontrolled recursion in mapHas/filesFilter allows uncatchable stack-overflow DoS via crafted long-path tar with member selection",
+    "severity": "high",
+    "location": "tar@<=7.5.20",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "168e4ec0a2f1159b",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1118974",
+    "title": "vm2 Sandbox Access to Host Buffer.alloc Allows timeout Bypass Resulting in Memory Exhaustion",
+    "severity": "high",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-770"
+  },
+  {
+    "id": "6fa6facd76b69c0e",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1118975",
+    "title": "vm2 has a Sandbox Escape via Promise Constructor Unhandled Rejection (Process Crash DoS)",
+    "severity": "high",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "240ee191df807078",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1120659",
+    "title": "NodeVM network builtin exclusions bypass via internal _http_client and _http_server",
+    "severity": "high",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "a765baa81d234f0a",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1120660",
+    "title": "vm2's Bridge Proxy set trap ignores receiver parameter, enabling host object property injection via prototype chain",
+    "severity": "high",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "abb8797a58d2a213",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1120661",
+    "title": "vm2 has a sandbox escape via unblocked cross-realm Symbol.for keys + missing bridge write-trap symbol checks",
+    "severity": "high",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "3b9cb95a6af1b49f",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1145102",
+    "title": "vm2 has Memory Exhaustion DoS via bufferAllocLimit Bypass",
+    "severity": "high",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-770"
+  },
+  {
+    "id": "e874b4c16d899898",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1145106",
+    "title": "vm2's bufferAllocLimit cap bypassed by Buffer.concat and Buffer.from arrayLike",
+    "severity": "high",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-770"
+  },
+  {
+    "id": "77b8a47b5ea236a5",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1240856",
+    "title": "vm2 CLI provides no sandbox isolation - host-realm require() is reachable from sandboxed scripts",
+    "severity": "high",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-453"
+  },
+  {
+    "id": "cbb2f11a72c6bb67",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1240859",
+    "title": "vm2: NodeVM builtin denylist bypass via fs/promises despite -fs, allowing host filesystem writes",
+    "severity": "high",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-269"
+  },
+  {
+    "id": "ba7c1d4066a73ee1",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1241227",
+    "title": "vm2: Host Promise rejection from an exposed constructor can terminate the vm2 host process",
+    "severity": "high",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "8aca5cce080d963f",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1241264",
+    "title": "vm2: `allowAsync: false` can be bypassed through Promise thenable assimilation in VM and NodeVM",
+    "severity": "high",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "5efbaaf98edf7f08",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1241272",
+    "title": "vm2: timeout Option Bypass via FinalizationRegistry Cleanup Callback (Unbounded Host Event-Loop Block)",
+    "severity": "high",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "36f877972e6840cc",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1118729",
+    "title": "ws affected by a DoS when handling a request with many HTTP headers",
+    "severity": "high",
+    "location": "ws@7.0.0 - 7.5.10",
+    "cwe": "CWE-476"
+  },
+  {
+    "id": "3d4d47323b815925",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1123260",
+    "title": "ws: Memory exhaustion DoS from tiny fragments and data chunks",
+    "severity": "high",
+    "location": "ws@7.0.0 - 7.5.10",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "fee708580e1b5515",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1243066",
+    "title": "Zod can exhaust memory while validating oversized constrained collections",
+    "severity": "high",
+    "location": "zod@<4.6.6",
+    "cwe": "CWE-770"
+  },
+  {
+    "id": "38f0b9014b339094",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-sequelize-query-concat",
+    "title": "Requête SQL construite par concaténation ou interpolation de chaîne passée à sequelize.query(). Utiliser des requêtes paramétrées (replacements / bind).",
+    "severity": "high",
+    "location": "data/static/codefixes/dbSchemaChallenge_1.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "6e9b519d48d65db3",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.sequelize.security.audit.sequelize-injection-express.express-sequelize-injection",
+    "title": "Detected a sequelize statement that is tainted by user-input. This could lead to SQL injection if the variable is user-controlled and is not properly sanitized. In order to prevent SQL injection, it i",
+    "severity": "high",
+    "location": "data/static/codefixes/dbSchemaChallenge_1.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "6484cf3b75565fbe",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-sequelize-query-concat",
+    "title": "Requête SQL construite par concaténation ou interpolation de chaîne passée à sequelize.query(). Utiliser des requêtes paramétrées (replacements / bind).",
+    "severity": "high",
+    "location": "data/static/codefixes/dbSchemaChallenge_3.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "751a6d16aff5ce51",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-sequelize-query-template-literal",
+    "title": "Requête SQL en template literal avec interpolation ${...} passée à .query() : injection SQL possible.",
+    "severity": "high",
+    "location": "data/static/codefixes/dbSchemaChallenge_3.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "14ca461e9c4437d7",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.sequelize.security.audit.sequelize-injection-express.express-sequelize-injection",
+    "title": "Detected a sequelize statement that is tainted by user-input. This could lead to SQL injection if the variable is user-controlled and is not properly sanitized. In order to prevent SQL injection, it i",
+    "severity": "high",
+    "location": "data/static/codefixes/dbSchemaChallenge_3.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "e68f1cf942b8c71f",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-sequelize-query-concat",
+    "title": "Requête SQL construite par concaténation ou interpolation de chaîne passée à sequelize.query(). Utiliser des requêtes paramétrées (replacements / bind).",
+    "severity": "high",
+    "location": "data/static/codefixes/unionSqlInjectionChallenge_1.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "a8589ead85c269dc",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-sequelize-query-template-literal",
+    "title": "Requête SQL en template literal avec interpolation ${...} passée à .query() : injection SQL possible.",
+    "severity": "high",
+    "location": "data/static/codefixes/unionSqlInjectionChallenge_1.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "df30fa767a4bdc88",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.sequelize.security.audit.sequelize-injection-express.express-sequelize-injection",
+    "title": "Detected a sequelize statement that is tainted by user-input. This could lead to SQL injection if the variable is user-controlled and is not properly sanitized. In order to prevent SQL injection, it i",
+    "severity": "high",
+    "location": "data/static/codefixes/unionSqlInjectionChallenge_1.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "a1ce4e22c61b8cc0",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-sequelize-query-concat",
+    "title": "Requête SQL construite par concaténation ou interpolation de chaîne passée à sequelize.query(). Utiliser des requêtes paramétrées (replacements / bind).",
+    "severity": "high",
+    "location": "data/static/codefixes/unionSqlInjectionChallenge_3.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "4811d675fd54116e",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-sequelize-query-template-literal",
+    "title": "Requête SQL en template literal avec interpolation ${...} passée à .query() : injection SQL possible.",
+    "severity": "high",
+    "location": "data/static/codefixes/unionSqlInjectionChallenge_3.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "8a804fec162ef081",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.sequelize.security.audit.sequelize-injection-express.express-sequelize-injection",
+    "title": "Detected a sequelize statement that is tainted by user-input. This could lead to SQL injection if the variable is user-controlled and is not properly sanitized. In order to prevent SQL injection, it i",
+    "severity": "high",
+    "location": "data/static/codefixes/unionSqlInjectionChallenge_3.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "ede9eb300019a139",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-hardcoded-private-key",
+    "title": "Clé privée PEM codée en dur dans le code source. Elle doit venir d'un secret externe.",
+    "severity": "high",
+    "location": "lib/insecurity.ts",
+    "cwe": "CWE-321"
+  },
+  {
+    "id": "09e3cb46ef6490ec",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-xml-noent-regex",
+    "title": "Parseur XML avec noent: true, y compris lorsque le code est dans une chaîne évaluée : entités externes résolues (XXE).",
+    "severity": "high",
+    "location": "routes/fileUpload.ts",
+    "cwe": "CWE-611"
+  },
+  {
+    "id": "503af5cc0af0270b",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-sequelize-query-concat",
+    "title": "Requête SQL construite par concaténation ou interpolation de chaîne passée à sequelize.query(). Utiliser des requêtes paramétrées (replacements / bind).",
+    "severity": "high",
+    "location": "routes/login.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "04a6c13642ef57cf",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-sequelize-query-template-literal",
+    "title": "Requête SQL en template literal avec interpolation ${...} passée à .query() : injection SQL possible.",
+    "severity": "high",
+    "location": "routes/login.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "c4febfe87ba358ce",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.sequelize.security.audit.sequelize-injection-express.express-sequelize-injection",
+    "title": "Detected a sequelize statement that is tainted by user-input. This could lead to SQL injection if the variable is user-controlled and is not properly sanitized. In order to prevent SQL injection, it i",
+    "severity": "high",
+    "location": "routes/login.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "70e6cc69d5ba3e16",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-sequelize-query-concat",
+    "title": "Requête SQL construite par concaténation ou interpolation de chaîne passée à sequelize.query(). Utiliser des requêtes paramétrées (replacements / bind).",
+    "severity": "high",
+    "location": "routes/search.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "2256ae23bdb85d7a",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-sequelize-query-template-literal",
+    "title": "Requête SQL en template literal avec interpolation ${...} passée à .query() : injection SQL possible.",
+    "severity": "high",
+    "location": "routes/search.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "34e1986563051521",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.sequelize.security.audit.sequelize-injection-express.express-sequelize-injection",
+    "title": "Detected a sequelize statement that is tainted by user-input. This could lead to SQL injection if the variable is user-controlled and is not properly sanitized. In order to prevent SQL injection, it i",
+    "severity": "high",
+    "location": "routes/search.ts",
+    "cwe": "CWE-89"
+  },
+  {
+    "id": "0b3ecb7281f4f929",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "NSWG-ECO-428",
+    "title": "Out-of-bounds Read",
+    "severity": "high",
+    "location": "base64url@0.0.6",
+    "cwe": null
+  },
+  {
+    "id": "c6cdb5db74d148c8",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2024-4068",
+    "title": "braces: fails to limit the number of characters it can handle",
+    "severity": "high",
+    "location": "braces@2.3.2",
+    "cwe": "CWE-1050"
+  },
+  {
+    "id": "68218222f1434ffe",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-118664",
+    "title": "decode-uri-component: decode-uri-component: Denial of Service via malformed percent-encoded input",
+    "severity": "high",
+    "location": "decode-uri-component@0.2.2",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "50e3685c099701fc",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-59725",
+    "title": "socket.io: engine.io: Socket.IO: Denial of Service via invalid binary POST requests",
+    "severity": "high",
+    "location": "engine.io@4.1.2",
+    "cwe": "CWE-404"
+  },
+  {
+    "id": "b77ef1087be0955a",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2020-15084",
+    "title": "Authorization bypass in express-jwt",
+    "severity": "high",
+    "location": "express-jwt@0.1.3",
+    "cwe": "CWE-285"
+  },
+  {
+    "id": "b9dbde4a6c03772a",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-12143",
+    "title": "form-data: form-data: Form field override via CRLF injection",
+    "severity": "high",
+    "location": "form-data@2.3.3",
+    "cwe": "CWE-93"
+  },
+  {
+    "id": "2b2fdb2603978856",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2022-25881",
+    "title": "http-cache-semantics: Regular Expression Denial of Service (ReDoS) vulnerability",
+    "severity": "high",
+    "location": "http-cache-semantics@3.8.1",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "166d44e5cb4ce533",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2022-23539",
+    "title": "jsonwebtoken: Unrestricted key type could lead to legacy keys usagen",
+    "severity": "high",
+    "location": "jsonwebtoken@0.1.0",
+    "cwe": "CWE-327"
+  },
+  {
+    "id": "614da9c1fa46af6b",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "NSWG-ECO-17",
+    "title": "Verification Bypass",
+    "severity": "high",
+    "location": "jsonwebtoken@0.1.0",
+    "cwe": null
+  },
+  {
+    "id": "03c56231a7eee23f",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2022-23539",
+    "title": "jsonwebtoken: Unrestricted key type could lead to legacy keys usagen",
+    "severity": "high",
+    "location": "jsonwebtoken@0.4.0",
+    "cwe": "CWE-327"
+  },
+  {
+    "id": "05cca6f019fa714e",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "NSWG-ECO-17",
+    "title": "Verification Bypass",
+    "severity": "high",
+    "location": "jsonwebtoken@0.4.0",
+    "cwe": null
+  },
+  {
+    "id": "b8d8f1ee54dec0c7",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2016-1000223",
+    "title": "Forgeable Public/Private Tokens",
+    "severity": "high",
+    "location": "jws@0.2.6",
+    "cwe": null
+  },
+  {
+    "id": "5290dc8747d7d8cf",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2025-65945",
+    "title": "node-jws: auth0/node-jws: Improper signature verification in HS256 algorithm",
+    "severity": "high",
+    "location": "jws@0.2.6",
+    "cwe": "CWE-347"
+  },
+  {
+    "id": "f739b1f72d12fc3d",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2025-25341",
+    "title": "libxmljs has segmentation fault, potentially leading to a denial-of-service (DoS)",
+    "severity": "high",
+    "location": "libxmljs@1.0.11",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "15bf923331e54e26",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2020-8203",
+    "title": "nodejs-lodash: prototype pollution in zipObjectDeep function",
+    "severity": "high",
+    "location": "lodash.set@4.3.2",
+    "cwe": "CWE-770"
+  },
+  {
+    "id": "5bc249b4ba536085",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2018-16487",
+    "title": "lodash: Prototype pollution in utilities function",
+    "severity": "high",
+    "location": "lodash@2.4.2",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "0257276bcf3230ca",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2021-23337",
+    "title": "nodejs-lodash: command injection via template",
+    "severity": "high",
+    "location": "lodash@2.4.2",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "ca16e6754b83a980",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-26996",
+    "title": "minimatch: minimatch: Denial of Service via specially crafted glob patterns",
+    "severity": "high",
+    "location": "minimatch@3.0.5",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "067d85119ca39f6f",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-27903",
+    "title": "minimatch: minimatch: Denial of Service due to unbounded recursive backtracking via crafted glob patterns",
+    "severity": "high",
+    "location": "minimatch@3.0.5",
+    "cwe": "CWE-407"
+  },
+  {
+    "id": "7d529afe75c555ca",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-27904",
+    "title": "minimatch: Minimatch: Denial of Service via catastrophic backtracking in glob expressions",
+    "severity": "high",
+    "location": "minimatch@3.0.5",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "f5d4a6cf62602dbd",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2017-18214",
+    "title": "nodejs-moment: Regular expression denial of service",
+    "severity": "high",
+    "location": "moment@2.0.0",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "d38b8f13e21f1010",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2022-24785",
+    "title": "Moment.js: Path traversal  in moment.locale",
+    "severity": "high",
+    "location": "moment@2.0.0",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "115f1a9bd26b7fff",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2025-47935",
+    "title": "Multer vulnerable to Denial of Service via memory leaks from unclosed streams",
+    "severity": "high",
+    "location": "multer@1.4.5-lts.2",
+    "cwe": "CWE-401"
+  },
+  {
+    "id": "a3a3c7671a0df628",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2025-47944",
+    "title": "Multer vulnerable to Denial of Service from maliciously crafted requests",
+    "severity": "high",
+    "location": "multer@1.4.5-lts.2",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "f6e79100ab7bca6f",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2025-48997",
+    "title": "multer: Multer vulnerable to Denial of Service via unhandled exception",
+    "severity": "high",
+    "location": "multer@1.4.5-lts.2",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "e905b059221b21bf",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2025-7338",
+    "title": "multer: Multer Denial of Service",
+    "severity": "high",
+    "location": "multer@1.4.5-lts.2",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "7e7155d5b7d010a4",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-2359",
+    "title": "multer: Multer: Denial of Service via dropped file upload connections",
+    "severity": "high",
+    "location": "multer@1.4.5-lts.2",
+    "cwe": "CWE-772"
+  },
+  {
+    "id": "2154ee607bdd9ac6",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-3304",
+    "title": "multer: Multer: Denial of Service via malformed requests",
+    "severity": "high",
+    "location": "multer@1.4.5-lts.2",
+    "cwe": "CWE-459"
+  },
+  {
+    "id": "2362384795f4c4b4",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-3520",
+    "title": "multer: Multer: Denial of Service via malformed requests",
+    "severity": "high",
+    "location": "multer@1.4.5-lts.2",
+    "cwe": "CWE-674"
+  },
+  {
+    "id": "4c95152f3579eceb",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-5079",
+    "title": "multer: Multer: Denial of Service via deeply nested field names in multipart form data",
+    "severity": "high",
+    "location": "multer@1.4.5-lts.2",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "4d42b11e29094ecd",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-77078",
+    "title": "multer: Multer: Denial of Service via crafted multipart field names",
+    "severity": "high",
+    "location": "multer@1.4.5-lts.2",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "266ed88820b73446",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-82333",
+    "title": "multer: Multer: Denial of Service via oversized array index in field names",
+    "severity": "high",
+    "location": "multer@1.4.5-lts.2",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "3761ed88ebe3909a",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2022-25887",
+    "title": "sanitize-html: insecure global regular expression replacement logic may lead to ReDoS",
+    "severity": "high",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "a9e796d08bf52439",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-33151",
+    "title": "socket.io: Socket.IO: Denial of Service due to excessive buffering of specially crafted packets",
+    "severity": "high",
+    "location": "socket.io-parser@4.0.5",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "d1bb57dd4579c7c4",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-69185",
+    "title": "socket.io-parser: Socket.IO: Denial of Service via memory exhaustion from crafted packets",
+    "severity": "high",
+    "location": "socket.io-parser@4.0.5",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "09e40af8a7e84d4f",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-23745",
+    "title": "node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives",
+    "severity": "high",
+    "location": "tar@4.4.19",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "17b1a2a0baa58036",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-23950",
+    "title": "node-tar: tar: node-tar: Arbitrary file overwrite via Unicode path collision race condition",
+    "severity": "high",
+    "location": "tar@4.4.19",
+    "cwe": "CWE-176"
+  },
+  {
+    "id": "63b0b789ebe276ca",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-24842",
+    "title": "node-tar: tar: node-tar: Arbitrary file creation via path traversal bypass in hardlink security check",
+    "severity": "high",
+    "location": "tar@4.4.19",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "324029e6d9d96878",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-26960",
+    "title": "node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation",
+    "severity": "high",
+    "location": "tar@4.4.19",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "7d2e314a0094807c",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-29786",
+    "title": "node-tar: hardlink path traversal via drive-relative linkpath",
+    "severity": "high",
+    "location": "tar@4.4.19",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "5b460e32113f7183",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-31802",
+    "title": "tar: tar: File overwrite via drive-relative symlink traversal",
+    "severity": "high",
+    "location": "tar@4.4.19",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "21b01cfc23adb8db",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-59874",
+    "title": "tar: Node-tar: Denial of Service via malformed tar archive header",
+    "severity": "high",
+    "location": "tar@4.4.19",
+    "cwe": "CWE-835"
+  },
+  {
+    "id": "679ab4a6e5b4ec36",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-73566",
+    "title": "tar: node-tar: Denial of Service via crafted long-path tar archive",
+    "severity": "high",
+    "location": "tar@4.4.19",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "1e3b82d296f291c5",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-23745",
+    "title": "node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "3202668738d8d084",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-23950",
+    "title": "node-tar: tar: node-tar: Arbitrary file overwrite via Unicode path collision race condition",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-176"
+  },
+  {
+    "id": "aa4863a156a81bad",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-24842",
+    "title": "node-tar: tar: node-tar: Arbitrary file creation via path traversal bypass in hardlink security check",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "8cd795828540c0a1",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-26960",
+    "title": "node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "b7a023763c9a7f23",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-29786",
+    "title": "node-tar: hardlink path traversal via drive-relative linkpath",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "d4061f570ddde02c",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-31802",
+    "title": "tar: tar: File overwrite via drive-relative symlink traversal",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "679cbe5b7b20ef3b",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-59874",
+    "title": "tar: Node-tar: Denial of Service via malformed tar archive header",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-835"
+  },
+  {
+    "id": "d6e71b9fa6e400c1",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-73566",
+    "title": "tar: node-tar: Denial of Service via crafted long-path tar archive",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "90dbdfd3d82c4f3d",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-100722",
+    "title": "vm2: vm2: Denial of Service via unhandled Promise rejection in construct trap",
+    "severity": "high",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "4008870b3ce05cca",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-44001",
+    "title": "vm2: vm2: Sandbox escape leads to Denial of Service",
+    "severity": "high",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "7a76ccc5c74e92b6",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-44004",
+    "title": "vm2: vm2: Denial of Service via host memory exhaustion",
+    "severity": "high",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-770"
+  },
+  {
+    "id": "13f47b975247bcc1",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-47135",
+    "title": "vm2: vm2: Sandbox escape allows arbitrary code execution on the host system",
+    "severity": "high",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "e8bf9c601f7c9406",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-47139",
+    "title": "vm2: vm2: Sandbox escape via internal HTTP built-ins leading to network restriction bypass",
+    "severity": "high",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "bf827ec8bb43b45b",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-47209",
+    "title": "vm2: vm2: Integrity bypass via incorrect property assignment leading to potential arbitrary code execution",
+    "severity": "high",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "492ce08581cfc9e3",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-47683",
+    "title": "vm2: vm2: Denial of Service due to memory allocation limit bypass",
+    "severity": "high",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-770"
+  },
+  {
+    "id": "55bae085fdc328e1",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92942",
+    "title": "vm2: vm2: Denial of Service via timeout bypass in sandboxed code",
+    "severity": "high",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "3a02e1338420d3b7",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92950",
+    "title": "vm2: vm2 before 3.11.7 Sandbox Escape via CLI require",
+    "severity": "high",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-453"
+  },
+  {
+    "id": "b5868d3a059269a3",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92958",
+    "title": "vm2: vm2: Sandbox escape via denylist bypass in NodeVM",
+    "severity": "high",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-269"
+  },
+  {
+    "id": "5380b9b537cee0db",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92959",
+    "title": "vm2: vm2: Asynchronous code execution bypass via Promise thenable assimilation",
+    "severity": "high",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "4d4ae4f9d624c2ca",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "GHSA-v836-6xw4-9cx3",
+    "title": "vm2 has Memory Exhaustion DoS via bufferAllocLimit Bypass",
+    "severity": "high",
+    "location": "vm2@3.9.17",
+    "cwe": null
+  },
+  {
+    "id": "1ce3c70f2174f47a",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2024-37890",
+    "title": "nodejs-ws: denial of service when handling a request with many HTTP headers",
+    "severity": "high",
+    "location": "ws@7.4.6",
+    "cwe": "CWE-476"
+  },
+  {
+    "id": "5969a22c7b95db68",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-48779",
+    "title": "ws: ws: Denial of Service via memory exhaustion from small WebSocket fragments",
+    "severity": "high",
+    "location": "ws@7.4.6",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "7845ecf6f44ce2ce",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "NSWG-ECO-428",
+    "title": "Out-of-bounds Read",
+    "severity": "high",
+    "location": "base64url@0.0.6",
+    "cwe": null
+  },
+  {
+    "id": "f8bca4e5c052de40",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-102990",
+    "title": "basic-ftp: basic-ftp: Denial of Service via crafted Unix directory listings",
+    "severity": "high",
+    "location": "basic-ftp@5.3.1",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "5d176991f3f44992",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2020-15084",
+    "title": "Authorization bypass in express-jwt",
+    "severity": "high",
+    "location": "express-jwt@0.1.3",
+    "cwe": "CWE-285"
+  },
+  {
+    "id": "2ab14627787fbd08",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2022-23539",
+    "title": "jsonwebtoken: Unrestricted key type could lead to legacy keys usagen",
+    "severity": "high",
+    "location": "jsonwebtoken@0.1.0",
+    "cwe": "CWE-327"
+  },
+  {
+    "id": "f764c9c56c8506cf",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "NSWG-ECO-17",
+    "title": "Verification Bypass",
+    "severity": "high",
+    "location": "jsonwebtoken@0.1.0",
+    "cwe": null
+  },
+  {
+    "id": "fd7c8b584c830d85",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2022-23539",
+    "title": "jsonwebtoken: Unrestricted key type could lead to legacy keys usagen",
+    "severity": "high",
+    "location": "jsonwebtoken@0.4.0",
+    "cwe": "CWE-327"
+  },
+  {
+    "id": "9454b1adc0e3c03a",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "NSWG-ECO-17",
+    "title": "Verification Bypass",
+    "severity": "high",
+    "location": "jsonwebtoken@0.4.0",
+    "cwe": null
+  },
+  {
+    "id": "7d4518890fb2ec99",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2016-1000223",
+    "title": "Forgeable Public/Private Tokens",
+    "severity": "high",
+    "location": "jws@0.2.6",
+    "cwe": null
+  },
+  {
+    "id": "9e1645ce2d34e9a9",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2025-65945",
+    "title": "node-jws: auth0/node-jws: Improper signature verification in HS256 algorithm",
+    "severity": "high",
+    "location": "jws@0.2.6",
+    "cwe": "CWE-347"
+  },
+  {
+    "id": "681d4d1ee4609670",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2018-16487",
+    "title": "lodash: Prototype pollution in utilities function",
+    "severity": "high",
+    "location": "lodash@2.4.2",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "dde3c7e7189e561f",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2021-23337",
+    "title": "nodejs-lodash: command injection via template",
+    "severity": "high",
+    "location": "lodash@2.4.2",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "09a3e019e7a7a3b7",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2017-18214",
+    "title": "nodejs-moment: Regular expression denial of service",
+    "severity": "high",
+    "location": "moment@2.0.0",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "f5576849d8ff2873",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2022-24785",
+    "title": "Moment.js: Path traversal  in moment.locale",
+    "severity": "high",
+    "location": "moment@2.0.0",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "b642f0ecef9bfae4",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2022-25887",
+    "title": "sanitize-html: insecure global regular expression replacement logic may lead to ReDoS",
+    "severity": "high",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "1d4b5244e09eeeaf",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-23745",
+    "title": "node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "40caaeeb4f3c003a",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-23950",
+    "title": "node-tar: tar: node-tar: Arbitrary file overwrite via Unicode path collision race condition",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-176"
+  },
+  {
+    "id": "0954132e66ebdf43",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-24842",
+    "title": "node-tar: tar: node-tar: Arbitrary file creation via path traversal bypass in hardlink security check",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "7c2e884b64bd5675",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-26960",
+    "title": "node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "810e9582da4ea90c",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-29786",
+    "title": "node-tar: hardlink path traversal via drive-relative linkpath",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "52a8cf985ebdf55d",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-31802",
+    "title": "tar: tar: File overwrite via drive-relative symlink traversal",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "2799ec82615eff66",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-59874",
+    "title": "tar: Node-tar: Denial of Service via malformed tar archive header",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-835"
+  },
+  {
+    "id": "db84d79527c6e99e",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-73566",
+    "title": "tar: node-tar: Denial of Service via crafted long-path tar archive",
+    "severity": "high",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "9030fcbf7d18f366",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-76844",
+    "title": "webpack-dev-middleware: webpack-dev-middleware: Information Disclosure via Path Traversal",
+    "severity": "high",
+    "location": "zlib1g@1:1.3.dfsg+really1.3.1-1+b1",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "f3b058b750fe37b6",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-85091",
+    "title": "zlib: zlib: Heap buffer overflow in gz_vacate() allows arbitrary code execution",
+    "severity": "high",
+    "location": "zlib1g@1:1.3.dfsg+really1.3.1-1+b1",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "abf8f9c09423846c",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "title": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "severity": "medium",
+    "location": ".github/workflows/codeql-analysis.yml",
+    "cwe": "CWE-1357"
+  },
+  {
+    "id": "9d869232127c1c30",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.jsonwebtoken.security.jwt-hardcode.hardcoded-jwt-secret",
+    "title": "A hard-coded credential was detected. It is not recommended to store credentials in source-code, as this risks secrets being leaked and used by either an internal or external malicious adversary. It i",
+    "severity": "medium",
+    "location": "lib/insecurity.ts",
+    "cwe": "CWE-798"
+  },
+  {
+    "id": "282daa88b254bba9",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-eval-non-literal",
+    "title": "eval() appelé avec une valeur non littérale ; risque d'exécution de code arbitraire.",
+    "severity": "medium",
+    "location": "routes/captcha.ts",
+    "cwe": "CWE-95"
+  },
+  {
+    "id": "68a0aa49fad9c412",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.express.security.injection.raw-html-format.raw-html-format",
+    "title": "User data flows into the host portion of this manually-constructed HTML. This can introduce a Cross-Site-Scripting (XSS) vulnerability if this comes from user-provided input. Consider using a sanitiza",
+    "severity": "medium",
+    "location": "routes/chatbot.ts",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "b5d970f8cbae99c7",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.express.security.audit.express-path-join-resolve-traversal.express-path-join-resolve-traversal",
+    "title": "Possible writing outside of the destination, make sure that the target path is nested in the intended destination",
+    "severity": "medium",
+    "location": "routes/dataErasure.ts",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "335fd009de79a3d2",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.express.security.audit.express-res-sendfile.express-res-sendfile",
+    "title": "The application processes user-input, this is passed to res.sendFile which can allow an attacker to arbitrarily read files on the system through path traversal. It is recommended to perform input vali",
+    "severity": "medium",
+    "location": "routes/fileServer.ts",
+    "cwe": "CWE-73"
+  },
+  {
+    "id": "74dcf82e75a3c4ff",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.express.security.audit.express-res-sendfile.express-res-sendfile",
+    "title": "The application processes user-input, this is passed to res.sendFile which can allow an attacker to arbitrarily read files on the system through path traversal. It is recommended to perform input vali",
+    "severity": "medium",
+    "location": "routes/keyServer.ts",
+    "cwe": "CWE-73"
+  },
+  {
+    "id": "d28c5422acd6f5a9",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.express.security.audit.express-path-join-resolve-traversal.express-path-join-resolve-traversal",
+    "title": "Possible writing outside of the destination, make sure that the target path is nested in the intended destination",
+    "severity": "medium",
+    "location": "routes/keyServer.ts",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "1f9ecf3e3109f939",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.express.security.audit.express-res-sendfile.express-res-sendfile",
+    "title": "The application processes user-input, this is passed to res.sendFile which can allow an attacker to arbitrarily read files on the system through path traversal. It is recommended to perform input vali",
+    "severity": "medium",
+    "location": "routes/logfileServer.ts",
+    "cwe": "CWE-73"
+  },
+  {
+    "id": "b5830879e2781c7c",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.express.security.audit.express-path-join-resolve-traversal.express-path-join-resolve-traversal",
+    "title": "Possible writing outside of the destination, make sure that the target path is nested in the intended destination",
+    "severity": "medium",
+    "location": "routes/logfileServer.ts",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "2729569b587f1f6d",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.express.security.audit.express-ssrf.express-ssrf",
+    "title": "The following request request.get() was found to be crafted from user-input `req` which can lead to Server-Side Request Forgery (SSRF) vulnerabilities. It is recommended where possible to not allow us",
+    "severity": "medium",
+    "location": "routes/profileImageUrlUpload.ts",
+    "cwe": "CWE-918"
+  },
+  {
+    "id": "c0e0ed05bebe1d87",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.express.security.audit.express-res-sendfile.express-res-sendfile",
+    "title": "The application processes user-input, this is passed to res.sendFile which can allow an attacker to arbitrarily read files on the system through path traversal. It is recommended to perform input vali",
+    "severity": "medium",
+    "location": "routes/quarantineServer.ts",
+    "cwe": "CWE-73"
+  },
+  {
+    "id": "b7ff340ccf4c16f4",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.express.security.audit.express-path-join-resolve-traversal.express-path-join-resolve-traversal",
+    "title": "Possible writing outside of the destination, make sure that the target path is nested in the intended destination",
+    "severity": "medium",
+    "location": "routes/quarantineServer.ts",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "ba8a05b35e09b0bc",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.express.security.audit.express-open-redirect.express-open-redirect",
+    "title": "The application redirects to a URL specified by user-supplied input `query` that is not validated. This could redirect users to malicious locations. Consider using an allow-list approach to validate U",
+    "severity": "medium",
+    "location": "routes/redirect.ts",
+    "cwe": "CWE-601"
+  },
+  {
+    "id": "4c4fffc7ee7769c0",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "rules.custom-eval-non-literal",
+    "title": "eval() appelé avec une valeur non littérale ; risque d'exécution de code arbitraire.",
+    "severity": "medium",
+    "location": "routes/userProfile.ts",
+    "cwe": "CWE-95"
+  },
+  {
+    "id": "2ca427d654f1b160",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.express.security.express-insecure-template-usage.express-insecure-template-usage",
+    "title": "User data from `req` is being compiled into the template, which can lead to a Server Side Template Injection (SSTI) vulnerability.",
+    "severity": "medium",
+    "location": "routes/userProfile.ts",
+    "cwe": "CWE-1336"
+  },
+  {
+    "id": "5d7f87e7da72c605",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "javascript.express.security.audit.express-check-directory-listing.express-check-directory-listing",
+    "title": "Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing unless it is a public resource. If you need direc",
+    "severity": "medium",
+    "location": "server.ts",
+    "cwe": "CWE-548"
+  },
+  {
+    "id": "1c68e028a5d4199d",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "GHSA-rvg8-pwq2-xj7q",
+    "title": "Out-of-bounds Read in base64url",
+    "severity": "medium",
+    "location": "base64url@0.0.6",
+    "cwe": null
+  },
+  {
+    "id": "45954aa4ef092e45",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-45822",
+    "title": "decode-uri-component: decode-uri-component: Denial of Service via crafted input",
+    "severity": "medium",
+    "location": "decode-uri-component@0.2.2",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "3ab82dd4bd330874",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-10732",
+    "title": "decompress: Decompress: Arbitrary file write leading to remote code execution via crafted ZIP archive (Zip Slip)",
+    "severity": "medium",
+    "location": "decompress@4.2.1",
+    "cwe": "CWE-29"
+  },
+  {
+    "id": "96ab5709eb1bc8db",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-39243",
+    "title": "decompress: Decompress: File disclosure and corruption via arbitrary hardlink creation",
+    "severity": "medium",
+    "location": "decompress@4.2.1",
+    "cwe": "CWE-59"
+  },
+  {
+    "id": "f1f59f5eb5de9364",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2022-41940",
+    "title": "engine.io: Specially crafted HTTP request can trigger an uncaught exception",
+    "severity": "medium",
+    "location": "engine.io@4.1.2",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "d33bdd8cb50a9463",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-31808",
+    "title": "file-type: file-type: Denial of Service due to infinite loop in ASF file parsing",
+    "severity": "medium",
+    "location": "file-type@16.5.4",
+    "cwe": "CWE-835"
+  },
+  {
+    "id": "8c8dc95fbf82e14c",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-118773",
+    "title": "glob: glob: Denial of Service (DoS) via incomplete traversal cancellation",
+    "severity": "medium",
+    "location": "glob@10.5.0",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "ef7a22f1c9c590dd",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2022-33987",
+    "title": "nodejs-got: missing verification of requested URLs allows redirects to UNIX sockets",
+    "severity": "medium",
+    "location": "got@8.3.2",
+    "cwe": null
+  },
+  {
+    "id": "8fc783ef69c5e374",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2021-32822",
+    "title": "hbs: Insertion of Sensitive Information into Externally-Accessible File or Directory and Exposure of Sensitive Information to an Unauthorized Actor",
+    "severity": "medium",
+    "location": "hbs@4.4.0",
+    "cwe": "CWE-538"
+  },
+  {
+    "id": "4ad533445fdaafd1",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2022-23540",
+    "title": "jsonwebtoken: Insecure default algorithm in jwt.verify() could lead to signature validation bypass",
+    "severity": "medium",
+    "location": "jsonwebtoken@0.1.0",
+    "cwe": "CWE-287"
+  },
+  {
+    "id": "c815a42a4eedfa05",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2022-23541",
+    "title": "jsonwebtoken: Insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC",
+    "severity": "medium",
+    "location": "jsonwebtoken@0.1.0",
+    "cwe": "CWE-287"
+  },
+  {
+    "id": "2931431482e1c372",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2022-23540",
+    "title": "jsonwebtoken: Insecure default algorithm in jwt.verify() could lead to signature validation bypass",
+    "severity": "medium",
+    "location": "jsonwebtoken@0.4.0",
+    "cwe": "CWE-287"
+  },
+  {
+    "id": "f27d96f79a22f358",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2022-23541",
+    "title": "jsonwebtoken: Insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC",
+    "severity": "medium",
+    "location": "jsonwebtoken@0.4.0",
+    "cwe": "CWE-287"
+  },
+  {
+    "id": "a2f36ddd6a45a036",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2024-4067",
+    "title": "micromatch: vulnerable to Regular Expression Denial of Service",
+    "severity": "medium",
+    "location": "micromatch@3.1.10",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "d48adeabfb2b7d81",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-118764",
+    "title": "minimatch: minimatch: Denial of Service via crafted glob pattern expansion",
+    "severity": "medium",
+    "location": "minimatch@9.0.9",
+    "cwe": "CWE-405"
+  },
+  {
+    "id": "2864a11f207d91da",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2016-4055",
+    "title": "moment.js: regular expression denial of service",
+    "severity": "medium",
+    "location": "moment@2.0.0",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "b5032326c05f9579",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2021-23771",
+    "title": "Sandbox escape in notevil and argencoders-notevil",
+    "severity": "medium",
+    "location": "notevil@1.3.3",
+    "cwe": "CWE-1321"
+  },
+  {
+    "id": "fbd52140714ba900",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2025-15284",
+    "title": "qs: qs: Denial of Service via improper input validation in array parsing",
+    "severity": "medium",
+    "location": "qs@6.5.5",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "b00ec6dc3eb63e73",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-82417",
+    "title": "qs: qs: Denial of Service via improper validation in stringify function",
+    "severity": "medium",
+    "location": "qs@6.5.5",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "97dd9dabc722275f",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2023-28155",
+    "title": "request: bypass of SSRF mitigations when following a cross-protocol redirect",
+    "severity": "medium",
+    "location": "request@2.88.2",
+    "cwe": "CWE-918"
+  },
+  {
+    "id": "c915dc874c938ca9",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2016-1000237",
+    "title": "XSS - Sanitization not applied recursively",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "03dcb8295d0e4b64",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2017-16016",
+    "title": "Cross-Site Scripting in sanitize-html",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "4644054347d5d2b8",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2019-25225",
+    "title": "sanitize-html: sanitize-html cross site scripting",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "f618aed465a4a6e1",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2021-26539",
+    "title": "sanitize-html: improper handling of internationalized domain name (IDN) can lead to bypass hostname whitelist validation",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": null
+  },
+  {
+    "id": "cdb528ba8cf4d5c3",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2021-26540",
+    "title": "sanitize-html: improper validation of hostnames set by the \"allowedIframeHostnames\" option can lead to bypass hostname whitelist for iframe element",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": null
+  },
+  {
+    "id": "f3ff979d1fce6e3b",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2024-21501",
+    "title": "sanitize-html: Information Exposure when used on the backend",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-200"
+  },
+  {
+    "id": "5a642791159ae9de",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-113654",
+    "title": "sanitize-html: sanitize-html: HTML sanitization bypass via improper noscript tag handling",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "f53193f2eec155a1",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-113661",
+    "title": "sanitize-html: sanitize-html: Cross-site scripting via unsafe meta refresh content attributes",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "9cf3446627e99eec",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-63670",
+    "title": "ApostropheCMS: Mutation-XSS / allowedTags bypass via literal `</textarea/>` solidus close",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "9c89cf26ee95dcf9",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "NSWG-ECO-154",
+    "title": "Cross Site Scripting",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": null
+  },
+  {
+    "id": "83136521f1eaeb12",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2023-32695",
+    "title": "socket.io parser is a socket.io encoder and decoder written in JavaScr ...",
+    "severity": "medium",
+    "location": "socket.io-parser@4.0.5",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "8752626e204da9a4",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2024-38355",
+    "title": "socket.io: Unhandled 'error' event",
+    "severity": "medium",
+    "location": "socket.io@3.1.2",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "df002e33abd81152",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2024-28863",
+    "title": "node-tar: denial of service while parsing a tar file due to lack of folders depth validation",
+    "severity": "medium",
+    "location": "tar@4.4.19",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "c55f931e5f31f05e",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-53655",
+    "title": "node-tar: node-tar: File smuggling due to inconsistent tar archive parsing",
+    "severity": "medium",
+    "location": "tar@4.4.19",
+    "cwe": "CWE-436"
+  },
+  {
+    "id": "ec26d70846b769d1",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-59871",
+    "title": "node-tar: node-tar: Denial of Service due to incorrect PAX path handling",
+    "severity": "medium",
+    "location": "tar@4.4.19",
+    "cwe": "CWE-704"
+  },
+  {
+    "id": "1d244933bff5ee86",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-59875",
+    "title": "node-tar: node-tar: Denial of Service via crafted archive with NUL bytes in metadata",
+    "severity": "medium",
+    "location": "tar@4.4.19",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "ea45ec451b1b4611",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-53655",
+    "title": "node-tar: node-tar: File smuggling due to inconsistent tar archive parsing",
+    "severity": "medium",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-436"
+  },
+  {
+    "id": "cd12fba42103a50e",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-59871",
+    "title": "node-tar: node-tar: Denial of Service due to incorrect PAX path handling",
+    "severity": "medium",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-704"
+  },
+  {
+    "id": "10ba5d04d2496f0a",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-59875",
+    "title": "node-tar: node-tar: Denial of Service via crafted archive with NUL bytes in metadata",
+    "severity": "medium",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "063b81b8ac039e3c",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2023-26136",
+    "title": "tough-cookie: prototype pollution in cookie memstore",
+    "severity": "medium",
+    "location": "tough-cookie@2.5.0",
+    "cwe": "CWE-1321"
+  },
+  {
+    "id": "086372873b4b9100",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-41907",
+    "title": "uuid: uuid: Out-of-bounds write vulnerability impacts data integrity and confidentiality",
+    "severity": "medium",
+    "location": "uuid@3.4.0",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "ad0054b7979f1407",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-41907",
+    "title": "uuid: uuid: Out-of-bounds write vulnerability impacts data integrity and confidentiality",
+    "severity": "medium",
+    "location": "uuid@8.3.2",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "9c210a31ade39d7a",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2023-32313",
+    "title": "vm2: Inspect Manipulation",
+    "severity": "medium",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-74"
+  },
+  {
+    "id": "fa0b674c2099bf32",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-100723",
+    "title": "vm2: vm2: Information disclosure via zlib shared buffer pool",
+    "severity": "medium",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-200"
+  },
+  {
+    "id": "337b7cb67377fef4",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-44000",
+    "title": "vm2: vm2: Sandbox escape allows direct interaction with host objects",
+    "severity": "medium",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "4d3d6586f5d2f62e",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-44002",
+    "title": "vm2: vm2: Information disclosure through unsanitized host paths",
+    "severity": "medium",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-209"
+  },
+  {
+    "id": "78393e2ada11990a",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-44003",
+    "title": "vm2: vm2: Sandbox escape due to code transformer optimization bypass",
+    "severity": "medium",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "00ee55fc278de2c0",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-47141",
+    "title": "vm2: vm2: NodeVM observability builtins leak host process and HTTP request data",
+    "severity": "medium",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-668"
+  },
+  {
+    "id": "a93f9e69296cae2e",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92933",
+    "title": "vm2: vm2: Information Disclosure via util.getCallSites",
+    "severity": "medium",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-200"
+  },
+  {
+    "id": "077ea137465e58e2",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92945",
+    "title": "vm2: vm2: Module allowlist bypass allows access to restricted packages",
+    "severity": "medium",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "a694961a80b662f8",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-92949",
+    "title": "vm2: vm2: Sandbox bypass allows unauthorized data modification.",
+    "severity": "medium",
+    "location": "vm2@3.9.17",
+    "cwe": "CWE-471"
+  },
+  {
+    "id": "4d8beefc757da2c5",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "GHSA-2cm2-m3w5-gp2f",
+    "title": "vm2 has access to `VM2_INTERNAL_STATE_DO_NOT_USE_OR_PROGRAM_WILL_FAIL`",
+    "severity": "medium",
+    "location": "vm2@3.9.17",
+    "cwe": null
+  },
+  {
+    "id": "93d3b5303bef669b",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "GHSA-rvg8-pwq2-xj7q",
+    "title": "Out-of-bounds Read in base64url",
+    "severity": "medium",
+    "location": "base64url@0.0.6",
+    "cwe": null
+  },
+  {
+    "id": "3b62d1fb74c3d655",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-31808",
+    "title": "file-type: file-type: Denial of Service due to infinite loop in ASF file parsing",
+    "severity": "medium",
+    "location": "file-type@16.5.4",
+    "cwe": "CWE-835"
+  },
+  {
+    "id": "efc21523777bba9a",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-102010",
+    "title": "gcc-toolset-15-gcc: gcc: gcc-toolset-16: gcc: Denial of Service via use-after-free in binary heap erase_if",
+    "severity": "medium",
+    "location": "gcc-14-base@14.2.0-19",
+    "cwe": "CWE-825"
+  },
+  {
+    "id": "5ce6a91a688a799a",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-114690",
+    "title": "gcc: Confirmed out-of-bounds read/write in libstdc++ parallel `std",
+    "severity": "medium",
+    "location": "gcc-14-base@14.2.0-19",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "8aca03df9b0ebab8",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-114691",
+    "title": "gcc: Integer wrap in `std",
+    "severity": "medium",
+    "location": "gcc-14-base@14.2.0-19",
+    "cwe": "CWE-190"
+  },
+  {
+    "id": "c534897df1736a9e",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-115455",
+    "title": "gcc: Stack overflow in std::bitset on libstdc++",
+    "severity": "medium",
+    "location": "gcc-14-base@14.2.0-19",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "8653235ff187100e",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-95619",
+    "title": "gcc: libstdc++ integer overflow in `new` operator",
+    "severity": "medium",
+    "location": "gcc-14-base@14.2.0-19",
+    "cwe": "CWE-190"
+  },
+  {
+    "id": "c53bf56b6c1fb867",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2021-32822",
+    "title": "hbs: Insertion of Sensitive Information into Externally-Accessible File or Directory and Exposure of Sensitive Information to an Unauthorized Actor",
+    "severity": "medium",
+    "location": "hbs@4.4.0",
+    "cwe": "CWE-538"
+  },
+  {
+    "id": "dff654e2eae11f2b",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2022-23540",
+    "title": "jsonwebtoken: Insecure default algorithm in jwt.verify() could lead to signature validation bypass",
+    "severity": "medium",
+    "location": "jsonwebtoken@0.1.0",
+    "cwe": "CWE-287"
+  },
+  {
+    "id": "6aec0bbae2b18274",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2022-23541",
+    "title": "jsonwebtoken: Insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC",
+    "severity": "medium",
+    "location": "jsonwebtoken@0.1.0",
+    "cwe": "CWE-287"
+  },
+  {
+    "id": "e188b0225f8d27ef",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2022-23540",
+    "title": "jsonwebtoken: Insecure default algorithm in jwt.verify() could lead to signature validation bypass",
+    "severity": "medium",
+    "location": "jsonwebtoken@0.4.0",
+    "cwe": "CWE-287"
+  },
+  {
+    "id": "4b1d35f58ac5a2c5",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2022-23541",
+    "title": "jsonwebtoken: Insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC",
+    "severity": "medium",
+    "location": "jsonwebtoken@0.4.0",
+    "cwe": "CWE-287"
+  },
+  {
+    "id": "f7c494f91c1bc4f2",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-18374",
+    "title": "glibc: glibc: Heap buffer overflow via attacker-controlled fopen mode string",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "6412f854c9d18796",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-19499",
+    "title": "glibc: Buffer Overflow in strfmon right-justification padding",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-122"
+  },
+  {
+    "id": "aa0831852483b5da",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-19542",
+    "title": "glibc: Fix out-of-bounds array write in tdelete",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-121"
+  },
+  {
+    "id": "813ab186a94a1f65",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-5435",
+    "title": "glibc: glibc: Out-of-bounds write via TSIG record processing",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "0f0277aab57eeacb",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-6238",
+    "title": "glibc: glibc: Application crash or uninitialized memory read via crafted DNS response",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-126"
+  },
+  {
+    "id": "545ff667f25483ca",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-6368",
+    "title": "glibc: glibc: Process abort due to invalid memory in wordexp",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-908"
+  },
+  {
+    "id": "6b12f51bd6b1faf6",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-6791",
+    "title": "glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-121"
+  },
+  {
+    "id": "3c20a83e5f0fb1ce",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-77117",
+    "title": "glibc: Non-progress DoS in SHIFT_JISX0213 -&gt",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-835"
+  },
+  {
+    "id": "09aa1b057f3ffde9",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-80489",
+    "title": "glibc: Non-progress DoS in EUC_JISX0213 -> UCS-4 conversion state",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-835"
+  },
+  {
+    "id": "fc8bd9ee522f46f2",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-84243",
+    "title": "glibc: glibc: Arbitrary code execution via directory traversal in LANGUAGE environment variable",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "4b2048a314c3c69a",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-8674",
+    "title": "glibc: glibc DNS stub resolver: Denial of Service via long search domain in configuration",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-617"
+  },
+  {
+    "id": "932cfb07d57d7c7e",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-86805",
+    "title": "glibc: glibc: Privilege escalation and arbitrary code execution via TOCTOU race condition in dynamic loader",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-367"
+  },
+  {
+    "id": "3e36181592912a30",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-89092",
+    "title": "glibc: nscd stack overflow leads to degraded DNS resolution",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-789"
+  },
+  {
+    "id": "ffa44d0b0a686ac4",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-95818",
+    "title": "glibc: glibc: Local attacker can cause denial of service and information disclosure via stack-based buffer overflow.",
+    "severity": "medium",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-121"
+  },
+  {
+    "id": "60ad6f1b7abc7f30",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-102010",
+    "title": "gcc-toolset-15-gcc: gcc: gcc-toolset-16: gcc: Denial of Service via use-after-free in binary heap erase_if",
+    "severity": "medium",
+    "location": "libgcc-s1@14.2.0-19",
+    "cwe": "CWE-825"
+  },
+  {
+    "id": "7a92b964d6843f04",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-114690",
+    "title": "gcc: Confirmed out-of-bounds read/write in libstdc++ parallel `std",
+    "severity": "medium",
+    "location": "libgcc-s1@14.2.0-19",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "8f884f6fca355a90",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-114691",
+    "title": "gcc: Integer wrap in `std",
+    "severity": "medium",
+    "location": "libgcc-s1@14.2.0-19",
+    "cwe": "CWE-190"
+  },
+  {
+    "id": "69fec9dc2c2dd856",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-115455",
+    "title": "gcc: Stack overflow in std::bitset on libstdc++",
+    "severity": "medium",
+    "location": "libgcc-s1@14.2.0-19",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "5195457bac70ecfc",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-95619",
+    "title": "gcc: libstdc++ integer overflow in `new` operator",
+    "severity": "medium",
+    "location": "libgcc-s1@14.2.0-19",
+    "cwe": "CWE-190"
+  },
+  {
+    "id": "8629df88e79bf8b6",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-102010",
+    "title": "gcc-toolset-15-gcc: gcc: gcc-toolset-16: gcc: Denial of Service via use-after-free in binary heap erase_if",
+    "severity": "medium",
+    "location": "libgomp1@14.2.0-19",
+    "cwe": "CWE-825"
+  },
+  {
+    "id": "98170032e3be189a",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-114690",
+    "title": "gcc: Confirmed out-of-bounds read/write in libstdc++ parallel `std",
+    "severity": "medium",
+    "location": "libgomp1@14.2.0-19",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "49fe4e86cd864236",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-114691",
+    "title": "gcc: Integer wrap in `std",
+    "severity": "medium",
+    "location": "libgomp1@14.2.0-19",
+    "cwe": "CWE-190"
+  },
+  {
+    "id": "5b4c8dc03fa02887",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-115455",
+    "title": "gcc: Stack overflow in std::bitset on libstdc++",
+    "severity": "medium",
+    "location": "libgomp1@14.2.0-19",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "7945e7c948368618",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-95619",
+    "title": "gcc: libstdc++ integer overflow in `new` operator",
+    "severity": "medium",
+    "location": "libgomp1@14.2.0-19",
+    "cwe": "CWE-190"
+  },
+  {
+    "id": "3c3b5df4e4bffb72",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-102010",
+    "title": "gcc-toolset-15-gcc: gcc: gcc-toolset-16: gcc: Denial of Service via use-after-free in binary heap erase_if",
+    "severity": "medium",
+    "location": "libstdc++6@14.2.0-19",
+    "cwe": "CWE-825"
+  },
+  {
+    "id": "fa6b1c5114a074b2",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-114690",
+    "title": "gcc: Confirmed out-of-bounds read/write in libstdc++ parallel `std",
+    "severity": "medium",
+    "location": "libstdc++6@14.2.0-19",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "616c1067374e31db",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-114691",
+    "title": "gcc: Integer wrap in `std",
+    "severity": "medium",
+    "location": "libstdc++6@14.2.0-19",
+    "cwe": "CWE-190"
+  },
+  {
+    "id": "325fe3332dc1a98d",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-115455",
+    "title": "gcc: Stack overflow in std::bitset on libstdc++",
+    "severity": "medium",
+    "location": "libstdc++6@14.2.0-19",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "11a87e1c84a4a8da",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-95619",
+    "title": "gcc: libstdc++ integer overflow in `new` operator",
+    "severity": "medium",
+    "location": "libstdc++6@14.2.0-19",
+    "cwe": "CWE-190"
+  },
+  {
+    "id": "2880828450eccd2b",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2016-4055",
+    "title": "moment.js: regular expression denial of service",
+    "severity": "medium",
+    "location": "moment@2.0.0",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "f3c834350bab5766",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2021-23771",
+    "title": "Sandbox escape in notevil and argencoders-notevil",
+    "severity": "medium",
+    "location": "notevil@1.3.3",
+    "cwe": "CWE-1321"
+  },
+  {
+    "id": "51dce03eb0095202",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2016-1000237",
+    "title": "XSS - Sanitization not applied recursively",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "e84402b7af60e4e9",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2017-16016",
+    "title": "Cross-Site Scripting in sanitize-html",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "656ba68d77575082",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2019-25225",
+    "title": "sanitize-html: sanitize-html cross site scripting",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "951647cdf7ce8c97",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2021-26539",
+    "title": "sanitize-html: improper handling of internationalized domain name (IDN) can lead to bypass hostname whitelist validation",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": null
+  },
+  {
+    "id": "6b1df839dff33553",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2021-26540",
+    "title": "sanitize-html: improper validation of hostnames set by the \"allowedIframeHostnames\" option can lead to bypass hostname whitelist for iframe element",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": null
+  },
+  {
+    "id": "ebfd745d0b8fd2b3",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2024-21501",
+    "title": "sanitize-html: Information Exposure when used on the backend",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-200"
+  },
+  {
+    "id": "82aa81a54317d480",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-113654",
+    "title": "sanitize-html: sanitize-html: HTML sanitization bypass via improper noscript tag handling",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "28503792d02a1470",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-113661",
+    "title": "sanitize-html: sanitize-html: Cross-site scripting via unsafe meta refresh content attributes",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "f645cbb1b59f97f6",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-63670",
+    "title": "ApostropheCMS: Mutation-XSS / allowedTags bypass via literal `</textarea/>` solidus close",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "d500748002729ce2",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "NSWG-ECO-154",
+    "title": "Cross Site Scripting",
+    "severity": "medium",
+    "location": "sanitize-html@1.4.2",
+    "cwe": null
+  },
+  {
+    "id": "1afb3735442c726d",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-53655",
+    "title": "node-tar: node-tar: File smuggling due to inconsistent tar archive parsing",
+    "severity": "medium",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-436"
+  },
+  {
+    "id": "8f7de31efa8f713b",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-59871",
+    "title": "node-tar: node-tar: Denial of Service due to incorrect PAX path handling",
+    "severity": "medium",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-704"
+  },
+  {
+    "id": "1e87a5b15981f97e",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-59875",
+    "title": "node-tar: node-tar: Denial of Service via crafted archive with NUL bytes in metadata",
+    "severity": "medium",
+    "location": "tar@6.2.1",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "4db6ab5c3099dc91",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-41907",
+    "title": "uuid: uuid: Out-of-bounds write vulnerability impacts data integrity and confidentiality",
+    "severity": "medium",
+    "location": "uuid@8.3.2",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "fc8200c721fd88db",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-27171",
+    "title": "zlib: zlib: Denial of Service via infinite loop in CRC32 combine functions",
+    "severity": "medium",
+    "location": "zlib1g@1:1.3.dfsg+really1.3.1-1+b1",
+    "cwe": "CWE-1284"
+  },
+  {
+    "id": "3e667f585e4a3d30",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10038",
+    "title": "Content Security Policy (CSP) Header Not Set",
+    "severity": "medium",
+    "location": "http://localhost:3000",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "46d121ffe2c4d906",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10098",
+    "title": "Cross-Domain Misconfiguration",
+    "severity": "medium",
+    "location": "http://localhost:3000/assets/public/favicon_js.ico",
+    "cwe": "CWE-264"
+  },
+  {
+    "id": "351ab89394fa61dc",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10098",
+    "title": "Cross-Domain Misconfiguration",
+    "severity": "medium",
+    "location": "http://localhost:3000/chunk-CE5v8pBj.js",
+    "cwe": "CWE-264"
+  },
+  {
+    "id": "a0dde81f3d907be9",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10038",
+    "title": "Content Security Policy (CSP) Header Not Set",
+    "severity": "medium",
+    "location": "http://localhost:3000/ftp/coupons_2013.md.bak",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "77113efc13e5ea8d",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10038",
+    "title": "Content Security Policy (CSP) Header Not Set",
+    "severity": "medium",
+    "location": "http://localhost:3000/ftp/eastere.gg",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "69b270b49337d951",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10038",
+    "title": "Content Security Policy (CSP) Header Not Set",
+    "severity": "medium",
+    "location": "http://localhost:3000/ftp/encrypt.pyc",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "76d7ff222ef17ace",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10098",
+    "title": "Cross-Domain Misconfiguration",
+    "severity": "medium",
+    "location": "http://localhost:3000/robots.txt",
+    "cwe": "CWE-264"
+  },
+  {
+    "id": "6f2821db5ab7181c",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10098",
+    "title": "Cross-Domain Misconfiguration",
+    "severity": "medium",
+    "location": "http://localhost:3000/rolldown-runtime-kqx1xuJ_.js",
+    "cwe": "CWE-264"
+  },
+  {
+    "id": "9cd907690ec6d3de",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10038",
+    "title": "Content Security Policy (CSP) Header Not Set",
+    "severity": "medium",
+    "location": "http://localhost:3000/sitemap.xml",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "ac844d9b0641b18e",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10098",
+    "title": "Cross-Domain Misconfiguration",
+    "severity": "medium",
+    "location": "http://localhost:3000/styles.css",
+    "cwe": "CWE-264"
+  },
+  {
+    "id": "c34f98b372d1e009",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1119438",
+    "title": "@tootallnate/once vulnerable to Incorrect Control Flow Scoping",
+    "severity": "low",
+    "location": "@tootallnate/once@<2.0.1",
+    "cwe": "CWE-705"
+  },
+  {
+    "id": "7434dfa432527ddc",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1103907",
+    "title": "cookie accepts cookie name, path, and domain with out of bounds characters",
+    "severity": "low",
+    "location": "cookie@<0.7.0",
+    "cwe": "CWE-74"
+  },
+  {
+    "id": "67338b2b3aafc333",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1243505",
+    "title": "deepmerge mergeObject() allows prototype poisoning of returned objects",
+    "severity": "low",
+    "location": "deepmerge@>=4.2.0",
+    "cwe": "CWE-1321"
+  },
+  {
+    "id": "664091c37ea185bc",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1112705",
+    "title": "jsdiff has a Denial of Service vulnerability in parsePatch and applyPatch",
+    "severity": "low",
+    "location": "diff@5.0.0 - 5.2.1",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "443f17152149c39a",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1243082",
+    "title": "Serialize JavaScript: Cross-site scripting (XSS) via unescaped </script at the end of a serialized function body",
+    "severity": "low",
+    "location": "serialize-javascript@<=7.1.2",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "09156e91641c5e1a",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1119689",
+    "title": "vm2 setup-sandbox.js violates Defense Invariant #11 in stack-trace formatter",
+    "severity": "low",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "727f06ac743be2e3",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-3449",
+    "title": "@tootallnate/once: @tootallnate/once: Denial of Service due to incorrect control flow scoping with AbortSignal",
+    "severity": "low",
+    "location": "@tootallnate/once@1.1.2",
+    "cwe": "CWE-705"
+  },
+  {
+    "id": "046ce7f05ba2d3c7",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2024-47764",
+    "title": "cookie: cookie accepts cookie name, path, and domain with out of bounds characters",
+    "severity": "low",
+    "location": "cookie@0.4.2",
+    "cwe": "CWE-74"
+  },
+  {
+    "id": "1b7ff7e47b536084",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2018-3721",
+    "title": "lodash: Prototype pollution in utilities function",
+    "severity": "low",
+    "location": "lodash@2.4.2",
+    "cwe": "CWE-471"
+  },
+  {
+    "id": "f7acc7e8a6776cf3",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2025-57349",
+    "title": "messageformat has a prototype pollution vulnerability",
+    "severity": "low",
+    "location": "messageformat@2.3.0",
+    "cwe": "CWE-1321"
+  },
+  {
+    "id": "12feab7cdaf8bad9",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "CVE-2026-77063",
+    "title": "multer: Multer: File size limit bypass via asynchronous file filter race condition",
+    "severity": "low",
+    "location": "multer@1.4.5-lts.2",
+    "cwe": "CWE-362"
+  },
+  {
+    "id": "d237e56892c69c9e",
+    "tool": "trivy-fs",
+    "approach": "SCA",
+    "rule": "GHSA-q3fm-4wcw-g57x",
+    "title": "vm2 setup-sandbox.js violates Defense Invariant #11 in stack-trace formatter",
+    "severity": "low",
+    "location": "vm2@3.9.17",
+    "cwe": null
+  },
+  {
+    "id": "7f1e8c1fc1467efa",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-3449",
+    "title": "@tootallnate/once: @tootallnate/once: Denial of Service due to incorrect control flow scoping with AbortSignal",
+    "severity": "low",
+    "location": "@tootallnate/once@1.1.2",
+    "cwe": "CWE-705"
+  },
+  {
+    "id": "0714b76b4b9df1e6",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-115456",
+    "title": "gcc: Out-of-bounds read in std::from_chars",
+    "severity": "low",
+    "location": "gcc-14-base@14.2.0-19",
+    "cwe": "CWE-125"
+  },
+  {
+    "id": "513f929df267618e",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2010-4756",
+    "title": "glibc: glob implementation can cause excessive CPU and memory consumption due to crafted glob expressions",
+    "severity": "low",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-399"
+  },
+  {
+    "id": "0b037fad0d8aff3c",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2018-20796",
+    "title": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c",
+    "severity": "low",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-674"
+  },
+  {
+    "id": "376ca486180ff0d5",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2019-1010022",
+    "title": "glibc: stack guard protection bypass",
+    "severity": "low",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-119"
+  },
+  {
+    "id": "b375cfd1839a38fb",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2019-1010023",
+    "title": "glibc: running ldd on malicious ELF leads to code execution because of wrong size computation",
+    "severity": "low",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": null
+  },
+  {
+    "id": "bba287fa2f7b2473",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2019-1010024",
+    "title": "glibc: ASLR bypass using cache of thread stack and heap",
+    "severity": "low",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-200"
+  },
+  {
+    "id": "4700654fa1221514",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2019-1010025",
+    "title": "glibc: information disclosure of heap addresses of pthread_created thread",
+    "severity": "low",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-330"
+  },
+  {
+    "id": "432492e47b34e73a",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2019-9192",
+    "title": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c",
+    "severity": "low",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-674"
+  },
+  {
+    "id": "70e32013eb9f4489",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-97399",
+    "title": "glibc: glibc: Denial of Service via out-of-bounds read in strncasecmp",
+    "severity": "low",
+    "location": "libc6@2.41-12+deb13u4",
+    "cwe": "CWE-126"
+  },
+  {
+    "id": "80c99e8057ac7b77",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-115456",
+    "title": "gcc: Out-of-bounds read in std::from_chars",
+    "severity": "low",
+    "location": "libgcc-s1@14.2.0-19",
+    "cwe": "CWE-125"
+  },
+  {
+    "id": "0ac1c480cbc68c48",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-115456",
+    "title": "gcc: Out-of-bounds read in std::from_chars",
+    "severity": "low",
+    "location": "libgomp1@14.2.0-19",
+    "cwe": "CWE-125"
+  },
+  {
+    "id": "3bda8694327531d4",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-115456",
+    "title": "gcc: Out-of-bounds read in std::from_chars",
+    "severity": "low",
+    "location": "libstdc++6@14.2.0-19",
+    "cwe": "CWE-125"
+  },
+  {
+    "id": "b4e76bd5099f1a4f",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2018-3721",
+    "title": "lodash: Prototype pollution in utilities function",
+    "severity": "low",
+    "location": "lodash@2.4.2",
+    "cwe": "CWE-471"
+  },
+  {
+    "id": "96db40c80635066f",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2025-57349",
+    "title": "messageformat has a prototype pollution vulnerability",
+    "severity": "low",
+    "location": "messageformat@2.3.0",
+    "cwe": "CWE-1321"
+  },
+  {
+    "id": "ec82e8260c46b480",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1091792",
+    "title": "Out-of-bounds Read in base64url",
+    "severity": "info",
+    "location": "base64url@<3.0.0",
+    "cwe": "CWE-125"
+  },
+  {
+    "id": "4ce3c2dc1a3185fe",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1147955",
+    "title": "decode-uri-component: Denial of service via exponential decoding of malformed percent-encoded input",
+    "severity": "info",
+    "location": "decode-uri-component@<=0.5.0",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "784535fa2669dfda",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1130126",
+    "title": "decompress: Arbitrary File Write via Archive Extraction (Zip Slip)",
+    "severity": "info",
+    "location": "decompress@*",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "2705ed7e297da784",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1139405",
+    "title": "decompress allows arbitrary hardlink creation during archive extraction",
+    "severity": "info",
+    "location": "decompress@*",
+    "cwe": "CWE-59"
+  },
+  {
+    "id": "0658dcdcf6945fc2",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1086442",
+    "title": "Denial of Service in ecstatic",
+    "severity": "info",
+    "location": "ecstatic@<4.1.3",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "094f6b0f81ecaa11",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1089525",
+    "title": "Uncaught exception in engine.io",
+    "severity": "info",
+    "location": "engine.io@0.7.8 - 0.7.9 || 1.8.0 - 6.6.6",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "55389dcf53bfb15a",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1114301",
+    "title": "file-type affected by infinite loop in ASF parser on malformed input with zero-size sub-header",
+    "severity": "info",
+    "location": "file-type@13.0.0 - 21.3.0",
+    "cwe": "CWE-835"
+  },
+  {
+    "id": "c645ce8bb6a02df2",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1244013",
+    "title": "Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
+    "severity": "info",
+    "location": "glob@9.0.0 - 14.0.1",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "3ccacb303652d678",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1088948",
+    "title": "Got allows a redirect to a UNIX socket",
+    "severity": "info",
+    "location": "got@<=11.8.3",
+    "cwe": null
+  },
+  {
+    "id": "c365f89e4eb56375",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1243453",
+    "title": "hbs: Insertion of Sensitive Information into Externally-Accessible File or Directory and Exposure of Sensitive Information to an Unauthorized Actor",
+    "severity": "info",
+    "location": "hbs@*",
+    "cwe": "CWE-94"
+  },
+  {
+    "id": "970a2be50773552d",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1112714",
+    "title": "js-yaml has prototype pollution in merge (<<)",
+    "severity": "info",
+    "location": "js-yaml@<=3.15.1 || 4.0.0 - 4.3.1",
+    "cwe": "CWE-1321"
+  },
+  {
+    "id": "744395639714d35f",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1112715",
+    "title": "js-yaml has prototype pollution in merge (<<)",
+    "severity": "info",
+    "location": "js-yaml@<=3.15.1 || 4.0.0 - 4.3.1",
+    "cwe": "CWE-1321"
+  },
+  {
+    "id": "55df250235bd79dd",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1121859",
+    "title": "JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+    "severity": "info",
+    "location": "js-yaml@<=3.15.1 || 4.0.0 - 4.3.1",
+    "cwe": "CWE-407"
+  },
+  {
+    "id": "81c932b010f8a461",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1121860",
+    "title": "JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+    "severity": "info",
+    "location": "js-yaml@<=3.15.1 || 4.0.0 - 4.3.1",
+    "cwe": "CWE-407"
+  },
+  {
+    "id": "d57ef27a1c62add0",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1097694",
+    "title": "jsonwebtoken's insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC",
+    "severity": "info",
+    "location": "jsonwebtoken@<=8.5.1",
+    "cwe": "CWE-287"
+  },
+  {
+    "id": "bf7031b2b8b40601",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1102458",
+    "title": "jsonwebtoken vulnerable to signature validation bypass due to insecure default algorithm in jwt.verify()",
+    "severity": "info",
+    "location": "jsonwebtoken@<=8.5.1",
+    "cwe": "CWE-287"
+  },
+  {
+    "id": "f12a6c4d50bd2895",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1106900",
+    "title": "Prototype Pollution in lodash",
+    "severity": "info",
+    "location": "lodash@<=4.17.20",
+    "cwe": "CWE-471"
+  },
+  {
+    "id": "dfb88da32c6d057c",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1098681",
+    "title": "Regular Expression Denial of Service (ReDoS) in micromatch",
+    "severity": "info",
+    "location": "micromatch@<=4.0.7",
+    "cwe": "CWE-1333"
+  },
+  {
+    "id": "6c8816a6bebb9236",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1244623",
+    "title": "minimatch has potential denial of service via globparts amplification",
+    "severity": "info",
+    "location": "minimatch@<=3.1.3 || 7.0.0 - 11.0.0",
+    "cwe": "CWE-405"
+  },
+  {
+    "id": "53d8631ac4787a7b",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1091022",
+    "title": "Regular Expression Denial of Service in moment",
+    "severity": "info",
+    "location": "moment@<=2.29.1",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "56af4ec18c07bddc",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1109563",
+    "title": "Predictable results in nanoid generation when given non-integer values",
+    "severity": "info",
+    "location": "nanoid@<=3.3.17",
+    "cwe": "CWE-835"
+  },
+  {
+    "id": "48157ab940d73bc5",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1109578",
+    "title": "Exposure of Sensitive Information to an Unauthorized Actor in nanoid",
+    "severity": "info",
+    "location": "nanoid@<=3.3.17",
+    "cwe": "CWE-200"
+  },
+  {
+    "id": "5d0264a41cb427d0",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1088750",
+    "title": "Sandbox escape in notevil and argencoders-notevil",
+    "severity": "info",
+    "location": "notevil@*",
+    "cwe": "CWE-1321"
+  },
+  {
+    "id": "1b116d7de4f89ce2",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1107224",
+    "title": "parse-uri Regular expression Denial of Service (ReDoS)",
+    "severity": "info",
+    "location": "parseuri@<2.0.0",
+    "cwe": "CWE-185"
+  },
+  {
+    "id": "4f6243230d2f563b",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113719",
+    "title": "qs's arrayLimit bypass in its bracket notation allows DoS via memory exhaustion",
+    "severity": "info",
+    "location": "qs@<=6.16.0",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "4b0e8624c0a072ec",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1119502",
+    "title": "qs has a remotely triggerable DoS: qs.stringify crashes with TypeError on null/undefined entries in comma-format arrays when encodeValuesOnly is set",
+    "severity": "info",
+    "location": "qs@<=6.16.0",
+    "cwe": "CWE-476"
+  },
+  {
+    "id": "7775240a2a51b5fd",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1158506",
+    "title": "qs array-limit bypass via bracket-key comma parsing",
+    "severity": "info",
+    "location": "qs@<=6.16.0",
+    "cwe": "CWE-770"
+  },
+  {
+    "id": "02d161e52461eac3",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1158507",
+    "title": "qs: Denial of Service via Attacker Controlled isBuffer",
+    "severity": "info",
+    "location": "qs@<=6.16.0",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "25d07b25e88f9962",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1243687",
+    "title": "qs : qs.stringify with arrayFormat 'comma' throws an uncaught TypeError on array elements carrying a non-callable own toString (DoS)",
+    "severity": "info",
+    "location": "qs@<=6.16.0",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "5034eb040cfe25e8",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1096727",
+    "title": "Server-Side Request Forgery in Request",
+    "severity": "info",
+    "location": "request@*",
+    "cwe": "CWE-918"
+  },
+  {
+    "id": "f0b6c4217a254398",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1089955",
+    "title": "Improper Input Validation in sanitize-html",
+    "severity": "info",
+    "location": "sanitize-html@<=2.17.7",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "04266609e45f8b5a",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1090842",
+    "title": "Cross-Site Scripting in sanitize-html",
+    "severity": "info",
+    "location": "sanitize-html@<=2.17.7",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "267224113cc39abf",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1091789",
+    "title": "Improper Input Validation in sanitize-html",
+    "severity": "info",
+    "location": "sanitize-html@<=2.17.7",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "1824e8c10c3b11fa",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1093595",
+    "title": "Cross-Site Scripting in sanitize-html",
+    "severity": "info",
+    "location": "sanitize-html@<=2.17.7",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "0bfff14669c95cc2",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1107530",
+    "title": "sanitize-html is vulnerable to XSS through incomprehensive sanitization",
+    "severity": "info",
+    "location": "sanitize-html@<=2.17.7",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "72bd0e37fee4752e",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1115182",
+    "title": "sanitize-html Information Exposure vulnerability",
+    "severity": "info",
+    "location": "sanitize-html@<=2.17.7",
+    "cwe": "CWE-200"
+  },
+  {
+    "id": "b8456cc6c8ae715c",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1164821",
+    "title": "ApostropheCMS: Mutation-XSS / allowedTags bypass via literal `</textarea/>` solidus close",
+    "severity": "info",
+    "location": "sanitize-html@<=2.17.7",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "f76ca4b5fb1096bb",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1242620",
+    "title": "ApostropheCMS sanitize-html: nonTextTags discard region ends early on an implied close, letting <noscript> content render",
+    "severity": "info",
+    "location": "sanitize-html@<=2.17.7",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "be17f85289537bd8",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1242641",
+    "title": "ApostropheCMS: Incomplete CVE-2026-53606: `meta http-equiv=refresh` `content` still ships `javascript:` / `data:` URLs",
+    "severity": "info",
+    "location": "sanitize-html@<=2.17.7",
+    "cwe": "CWE-79"
+  },
+  {
+    "id": "28789d8522d04931",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1119440",
+    "title": "Serialize JavaScript has CPU Exhaustion Denial of Service via crafted array-like objects",
+    "severity": "info",
+    "location": "serialize-javascript@<=7.1.2",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "eee197f8bdcd3003",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1100541",
+    "title": "Insufficient validation when decoding a Socket.IO packet",
+    "severity": "info",
+    "location": "socket.io-parser@4.0.0 - 4.2.6",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "6e2c5468bf8e0de1",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1239740",
+    "title": "socket.io has an unhandled 'error' event",
+    "severity": "info",
+    "location": "socket.io@3.0.0-rc1 - 4.6.1",
+    "cwe": "CWE-20"
+  },
+  {
+    "id": "63109f461c63afe2",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1097493",
+    "title": "Denial of service while parsing a tar file due to lack of folders count validation",
+    "severity": "info",
+    "location": "tar@<=7.5.20",
+    "cwe": "CWE-400"
+  },
+  {
+    "id": "3e605ec93ecb7359",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1120782",
+    "title": "node-tar applies PAX size override to intermediary GNU long-name/long-link headers, causing tar parser interpretation differential (file smuggling)",
+    "severity": "info",
+    "location": "tar@<=7.5.20",
+    "cwe": "CWE-436"
+  },
+  {
+    "id": "2a74b20b9b028ed4",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1123939",
+    "title": "node-tar: Process crash via PAX numeric path type confusion",
+    "severity": "info",
+    "location": "tar@<=7.5.20",
+    "cwe": "CWE-704"
+  },
+  {
+    "id": "abd27b77e9812ee4",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1123942",
+    "title": "node-tar: Uncaught Exception DoS via NUL byte in PAX path/linkpath records",
+    "severity": "info",
+    "location": "tar@<=7.5.20",
+    "cwe": "CWE-248"
+  },
+  {
+    "id": "8ba9facea0a0da23",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1097682",
+    "title": "tough-cookie Prototype Pollution vulnerability",
+    "severity": "info",
+    "location": "tough-cookie@<4.1.3",
+    "cwe": "CWE-1321"
+  },
+  {
+    "id": "0a6188d57b489ba2",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1119441",
+    "title": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+    "severity": "info",
+    "location": "uuid@<11.1.1",
+    "cwe": "CWE-787"
+  },
+  {
+    "id": "819222a51f01f07c",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1094598",
+    "title": "vm2 vulnerable to Inspect Manipulation",
+    "severity": "info",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-74"
+  },
+  {
+    "id": "294fbf694e5da08c",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1118972",
+    "title": "vm2 is Vulnerable to Host File Path Disclosure via Stack Trace Information Leak",
+    "severity": "info",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-209"
+  },
+  {
+    "id": "41d9966c4af7cf5f",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1118973",
+    "title": "vm2 Host Promise Resolution Preserves Object Identity Across Sandbox Boundary",
+    "severity": "info",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-668"
+  },
+  {
+    "id": "a7d2d757fd85e0c8",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1120658",
+    "title": "NodeVM observability builtins leak host process and HTTP request data",
+    "severity": "info",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-668"
+  },
+  {
+    "id": "d102cb1597ff6abc",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1240861",
+    "title": "vm2: vm.freeze()/vm.readonly() bypass via accessor descriptor",
+    "severity": "info",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-471"
+  },
+  {
+    "id": "9ed40d1877f2ef1b",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1240869",
+    "title": "vm2: External module allowlist uses a raw prefix test, so a prefix-sharing sibling package is treated as allowlisted",
+    "severity": "info",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-22"
+  },
+  {
+    "id": "e3f9d9a007a86ab4",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1241228",
+    "title": "vm2: NodeVM zlib Buffers expose pooled host memory across the VM boundary",
+    "severity": "info",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-200"
+  },
+  {
+    "id": "169f9b4daaf55d99",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1241269",
+    "title": "vm2: util.getCallSites() bypasses GHSA-v27g-jcqj-v8rw host-frame redaction, leaks host call stack",
+    "severity": "info",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-200"
+  },
+  {
+    "id": "a6a7d0cfc19a621c",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1244792",
+    "title": "vm2 has access to `VM2_INTERNAL_STATE_DO_NOT_USE_OR_PROGRAM_WILL_FAIL`",
+    "severity": "info",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "1c415eeb7a037659",
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1244796",
+    "title": "vm2's Transformer Fast-Path Bypass Exposes Internal State Variable",
+    "severity": "info",
+    "location": "vm2@<=3.12.1",
+    "cwe": "CWE-693"
+  },
+  {
+    "id": "536378e1f1bbb495",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "package_managers.npm.npm-missing-minimum-release-age.npm-missing-minimum-release-age",
+    "title": "This .npmrc does not set a minimum release age or sets it too low. Newly published packages can be malicious or unstable. Add `min-release-age = 7` to wait 7 days before resolving newly published pack",
+    "severity": "info",
+    "location": ".npmrc",
+    "cwe": "CWE-829"
+  },
+  {
+    "id": "53a783ad5a656d6e",
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "package_managers.npm.npm-missing-minimum-release-age.npm-missing-minimum-release-age",
+    "title": "This .npmrc does not set a minimum release age or sets it too low. Newly published packages can be malicious or unstable. Add `min-release-age = 7` to wait 7 days before resolving newly published pack",
+    "severity": "info",
+    "location": "frontend/.npmrc",
+    "cwe": "CWE-829"
+  },
+  {
+    "id": "9ce501c3d473effb",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-107496",
+    "title": "CVE-2026-107496",
+    "severity": "info",
+    "location": "libssl3t64@3.5.7-1~deb13u3",
+    "cwe": null
+  },
+  {
+    "id": "f6f1291efb7e402c",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-88822",
+    "title": "CVE-2026-88822",
+    "severity": "info",
+    "location": "libssl3t64@3.5.7-1~deb13u3",
+    "cwe": null
+  },
+  {
+    "id": "0607fd614e234d97",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-88823",
+    "title": "CVE-2026-88823",
+    "severity": "info",
+    "location": "libssl3t64@3.5.7-1~deb13u3",
+    "cwe": null
+  },
+  {
+    "id": "c0a7a1b5123eaee2",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-95691",
+    "title": "CVE-2026-95691",
+    "severity": "info",
+    "location": "libssl3t64@3.5.7-1~deb13u3",
+    "cwe": null
+  },
+  {
+    "id": "808a4095eca695d2",
+    "tool": "trivy-image",
+    "approach": "SCA",
+    "rule": "CVE-2026-95692",
+    "title": "CVE-2026-95692",
+    "severity": "info",
+    "location": "libssl3t64@3.5.7-1~deb13u3",
+    "cwe": null
+  },
+  {
+    "id": "90bf693005c4046c",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10109",
+    "title": "Modern Web Application",
+    "severity": "info",
+    "location": "http://localhost:3000",
+    "cwe": "CWE-1"
+  },
+  {
+    "id": "86fc1ff5ee953dcb",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10109",
+    "title": "Modern Web Application",
+    "severity": "info",
+    "location": "http://localhost:3000/",
+    "cwe": "CWE-1"
+  },
+  {
+    "id": "b82b505f999a2edd",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10104",
+    "title": "User Agent Fuzzer",
+    "severity": "info",
+    "location": "http://localhost:3000/assets [param=Header User-Agent]",
+    "cwe": "CWE-0"
+  },
+  {
+    "id": "9cdbfdb669e1779a",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10104",
+    "title": "User Agent Fuzzer",
+    "severity": "info",
+    "location": "http://localhost:3000/assets/public [param=Header User-Agent]",
+    "cwe": "CWE-0"
+  },
+  {
+    "id": "a0f79e49e3970ee0",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10109",
+    "title": "Modern Web Application",
+    "severity": "info",
+    "location": "http://localhost:3000/juice-shop/build/routes/fileServer.js:68:18",
+    "cwe": "CWE-1"
+  },
+  {
+    "id": "f3800e87f00d2c1e",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10109",
+    "title": "Modern Web Application",
+    "severity": "info",
+    "location": "http://localhost:3000/juice-shop/build/routes/styles.css",
+    "cwe": "CWE-1"
+  },
+  {
+    "id": "d36c5b38aab8707e",
+    "tool": "zap",
+    "approach": "DAST",
+    "rule": "10109",
+    "title": "Modern Web Application",
+    "severity": "info",
+    "location": "http://localhost:3000/sitemap.xml",
+    "cwe": "CWE-1"
+  }
+]
