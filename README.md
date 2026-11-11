@@ -121,6 +121,16 @@ Fichier : `.github/workflows/security.yml`.
 - **`npm audit` impossible** : Juice Shop ne versionne pas de `package-lock.json`. Pour l'analyse, générer le lockfile dans la copie clonée : `npm install --package-lock-only --ignore-scripts` (fait dans `targets/src/juice-shop`, jamais dans ce dépôt).
 - **Permissions sur `results/`** : le conteneur ZAP écrit en tant qu'autre utilisateur ; le dossier de sortie est passé en `777` par `dast_zap.py`.
 
+## Tableau de bord
+
+Une page regroupe toutes les exécutions : cible, statut de chaque étape, nombre de findings par approche et sévérité, meilleur outil, liens vers le rapport, la comparaison et le JSON.
+
+```bash
+python3 reporting/dashboard.py     # génère results/index.html
+```
+
+`ci_local.sh` le régénère en fin d'exécution. Les exécutions marquées « partielle » ne contiennent pas de rapport complet (essais intermédiaires).
+
 ## Résultats des exécutions de référence
 
 Exécutions archivées dans `results/` (chaque dossier contient `report.html`) :
