@@ -142,7 +142,7 @@ Exécutions archivées dans `results/` (chaque dossier contient `report.html`) :
 | crAPI | `*_crapi_final` | SAST, SCA, DAST | 366 | Rappel 0,60 en SCA, 0 en SAST et DAST |
 | Roundcube | `*_roundcube_avant` (SAST, SCA) + `*_roundcube_avant` (DAST, run séparé) | SAST, SCA (image), DAST | 1863 + 38 | Pas de vérité terrain |
 
-Présentation : `docs/presentation.pptx` (12 diapositives, suit les quatre points de la démonstration). Guide de démonstration : `docs/demo.md`.
+Présentation : `docs/presentation.pptx` (13 diapositives, suit les quatre points de la démonstration). Guide de démonstration : `docs/demo.md`.
 
 **Limites connues** : vérité terrain partielle et à valider (Juice Shop et crAPI) ; DAST sans authentification ; Roundcube sans `composer.lock`, donc `trivy-fs` ne trouve rien ; SonarQube non intégré.
 
@@ -154,3 +154,19 @@ Analyse : `python3 pipeline.py --target juice-shop --stages sast --with-sonar --
 Dernier résultat (Juice Shop, run `*_juice-shop_sonar`) : 152 issues, 2 des 6 vulnérabilités de la vérité terrain détectées (rappel 0,33, précision 0,02). Le CWE de chaque règle est lu dans la description publiée par SonarQube (lien cwe.mitre.org) ; certaines règles n'en publient qu'une catégorie générique (ex. CWE-1240).
 
 SonarQube n'est pas dans le workflow GitHub Actions : il demande un serveur dédié et un réglage système (`vm.max_map_count`) que les runners hébergés ne fournissent pas.
+
+## Interface web (Laravel)
+
+Une application web pour gérer tout le projet : ajouter une cible (URL, code source, image Docker optionnelle), capturer une image de la page, lancer SAST / SCA / DAST, suivre l'exécution, et consulter les findings, métriques, comparaisons et rapports. Toutes les données (cibles, analyses, étapes, findings) sont enregistrées dans une base SQLite.
+
+```bash
+cd web && php artisan migrate        # une seule fois
+./start.sh                            # interface + file de travail des analyses
+# ouvrir http://127.0.0.1:8000
+```
+
+- **Une analyse à la fois** : la file de travail exécute les analyses l'une après l'autre (ZAP et Docker ne supportent pas deux scans simultanés).
+- **Captures** : prises avec Google Chrome en mode headless (`VP_CHROME` pour un autre chemin).
+- **Résultats** : chaque analyse garde son dossier dans `results/` (comme en ligne de commande) et ses findings dans la base.
+- **Tests** : `cd web && php artisan test`.
+- **Sécurité** : le serveur n'écoute que sur 127.0.0.1. Ne scannez que des applications que vous êtes autorisé à tester.
