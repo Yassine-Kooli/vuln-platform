@@ -60,13 +60,34 @@ td.num{text-align:right;font-variant-numeric:tabular-nums}
 pre.log{background:#0b1020;color:#d1d5db;padding:12px;border-radius:8px;max-height:320px;overflow:auto;font-size:12px;white-space:pre-wrap}
 .pager{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:12px}
 .empty{color:var(--muted);text-align:center;padding:24px}
+.pager{display:flex;gap:12px;align-items:center;justify-content:center;margin-top:14px;flex-wrap:wrap}
+.nav-link{padding:6px 10px;border-radius:8px;color:var(--fg)} .nav-link.active{background:var(--accent);color:#fff}
+.nav-link:hover{text-decoration:none;filter:brightness(.95)}
+.notice{background:#fef3c7;color:#78350f;border:1px solid #fcd34d;padding:10px 14px;border-radius:8px;margin:10px 0;font-size:13px}
+.filters{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:10px;align-items:end}
+@media (max-width:760px){
+  main{padding:16px 14px 40px} nav{padding:12px 14px;flex-wrap:wrap;gap:10px}
+  .g-two,.g-targets{grid-template-columns:1fr !important}
+  .filters{grid-template-columns:1fr}
+  .kv{grid-template-columns:1fr}
+  table{font-size:12px}
+  .stats{grid-template-columns:1fr 1fr}
+}
+.pbar{height:10px;border-radius:999px;background:var(--line);overflow:hidden}
+.pfill{height:100%;border-radius:999px;background:var(--run)}
+.pfill.running{background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%);background-size:20px 20px;animation:stripes 1s linear infinite}
+.pfill.done{background:var(--ok)} .pfill.done_with_errors{background:var(--warn)} .pfill.failed{background:var(--bad)}
+@keyframes stripes{from{background-position:0 0}to{background-position:20px 0}}
+.st{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600}
+.st.ok{background:#dcfce7;color:#14532d} .st.error{background:#fee2e2;color:#7f1d1d} .st.running{background:#dbeafe;color:#1e3a8a}
+.pill.queued{background:var(--muted)} .pill.running{background:var(--run)}
 </style>
 </head>
 <body>
 <nav>
   <a class="brand" href="{{ route('dashboard') }}">Vulnérabilités web</a>
-  <a href="{{ route('dashboard') }}">Cibles</a>
-  <a href="{{ route('targets.create') }}">+ Ajouter une cible</a>
+  <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}" href="{{ route('dashboard') }}">Cibles</a>
+  <a class="nav-link {{ request()->routeIs('targets.create') ? 'active' : '' }}" href="{{ route('targets.create') }}">+ Ajouter une cible</a>
   <span class="sp"></span>
   <span class="muted">SAST · SCA · DAST</span>
 </nav>

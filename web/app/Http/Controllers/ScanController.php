@@ -11,8 +11,8 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
+use Symfony\Component\HttpFoundation\Response;
 
 class ScanController extends Controller
 {
@@ -25,6 +25,10 @@ class ScanController extends Controller
             'stages.*' => ['in:sast,sca,dast'],
         ], ['stages.required' => 'Choisissez au moins une étape.']);
 
+        if ($target->scans()->whereIn('status', ['queued', 'running'])->exists()) {
+            return back()->withErrors(['stages' => 'Une analyse est déjà en cours pour cette cible. Attendez sa fin.'])->withInput();
+        }
+
         $scan = $target->scans()->create([
             'stages' => array_values(array_unique($data['stages'])),
             'label' => 'web',
@@ -33,6 +37,30 @@ class ScanController extends Controller
         RunScan::dispatch($scan);
 
         return redirect()->route('scans.show', $scan);
+    }
+
+    /** Lance une analyse complète (SAST, SCA, DAST) sur toutes les cibles, en parallèle. */
+    public function storeAll(): RedirectResponse
+    {
+        $targets = Target::all();
+        if ($targets->isEmpty()) {
+            return back()->with('status', 'Aucune cible à analyser.');
+        }
+        $started = 0;
+        foreach ($targets as $target) {
+            if ($target->scans()->whereIn('status', ['queued', 'running'])->exists()) {
+                continue;  // déjà en cours : on ne double pas
+            }
+            $started++;
+            $scan = $target->scans()->create([
+                'stages' => ['sast', 'sca', 'dast'],
+                'label' => 'web',
+                'status' => 'queued',
+            ]);
+            RunScan::dispatch($scan);
+        }
+
+        return redirect()->route('dashboard')->with('status', $started.' analyse(s) lancée(s). Les cibles déjà en cours ont été ignorées.');
     }
 
     public function show(Request $request, Scan $scan, ScanRunner $runner): View
@@ -59,6 +87,7 @@ class ScanController extends Controller
             'findings' => $query->paginate(50)->withQueryString(),
             'overview' => $overview,
             'live' => $runner->liveState($scan),
+            'progress' => $scan->progressPercent($runner->liveState($scan)['stage_states']),
             'reportFiles' => $scan->run_dir ? array_values(array_filter(self::FILES, fn ($f) => is_file($scan->run_dir.'/'.$f))) : [],
         ]);
     }
@@ -74,11 +103,13 @@ class ScanController extends Controller
             'stage_states' => $live['stage_states'],
             'current_cmd' => $live['current_cmd'],
             'log_tail' => $live['log_tail'],
+            'progress' => $scan->progressPercent($live['stage_states']),
         ])->header('Cache-Control', 'no-store');
     }
 
     public function file(Scan $scan, string $file): Response
     {
+        // response()->file() returns a BinaryFileResponse (Symfony), not Illuminate\Http\Response.
         abort_unless(in_array($file, self::FILES, true) && $scan->run_dir, 404);
         $path = $scan->run_dir.'/'.$file;
         abort_unless(is_file($path), 404);

@@ -92,4 +92,36 @@ class PlatformTest extends TestCase
         $this->get("/scans/{$scan->id}/files/../../.env")->assertNotFound();
         $this->get("/scans/{$scan->id}/files/summary.json")->assertNotFound();
     }
+
+    public function test_a_second_scan_is_refused_while_one_is_active(): void
+    {
+        Queue::fake();
+        $target = Target::create(['name' => 'app', 'url' => 'http://localhost:1']);
+        Scan::create(['target_id' => $target->id, 'stages' => ['sast'], 'status' => 'running']);
+
+        $this->post("/targets/{$target->id}/scans", ['stages' => ['sast']])->assertSessionHasErrors('stages');
+        $this->assertSame(1, Scan::count());
+        Queue::assertNothingPushed();
+    }
+
+    public function test_a_target_with_an_active_scan_cannot_be_deleted(): void
+    {
+        $target = Target::create(['name' => 'app', 'url' => 'http://localhost:1']);
+        Scan::create(['target_id' => $target->id, 'stages' => ['sast'], 'status' => 'queued']);
+
+        $this->delete("/targets/{$target->id}");
+        $this->assertDatabaseHas('targets', ['id' => $target->id]);
+    }
+
+    public function test_run_all_skips_targets_already_busy(): void
+    {
+        Queue::fake();
+        $busy = Target::create(['name' => 'busy', 'url' => 'http://localhost:1']);
+        Target::create(['name' => 'free', 'url' => 'http://localhost:2']);
+        Scan::create(['target_id' => $busy->id, 'stages' => ['sast'], 'status' => 'running']);
+
+        $this->post('/scans/all')->assertRedirect();
+        $this->assertSame(2, Scan::count());
+        Queue::assertPushed(RunScan::class, 1);
+    }
 }

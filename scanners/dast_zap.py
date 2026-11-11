@@ -1,12 +1,20 @@
 """DAST : OWASP ZAP piloté par le plan d'automatisation zap/automation.yaml."""
 from __future__ import annotations
 
+import socket
 from pathlib import Path
 
 from common import ROOT, run
 
 ZAP_IMAGE = "zaproxy/zap-stable:latest"
 ZAP_TEMPLATE = ROOT / "zap" / "automation.yaml"
+
+
+def _free_port() -> int:
+    """Port de proxy libre pour cette analyse : plusieurs analyses DAST peuvent tourner en parallèle."""
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+        sock.bind(("127.0.0.1", 0))
+        return sock.getsockname()[1]
 
 
 def scan(target_url: str, out_dir: Path) -> Path:
@@ -26,7 +34,7 @@ def scan(target_url: str, out_dir: Path) -> Path:
         "docker", "run", "--rm", "--network", "host",
         "-v", f"{out_dir}:/zap/wrk:rw",
         # -port : --network host partage le réseau de l'hôte ; le proxy par défaut (8080) peut être occupé.
-        ZAP_IMAGE, "zap.sh", "-cmd", "-port", "8099", "-autorun", "/zap/wrk/zap-plan.yaml",
+        ZAP_IMAGE, "zap.sh", "-cmd", "-port", str(_free_port()), "-autorun", "/zap/wrk/zap-plan.yaml",
     ]
     proc = run(cmd)
     # Codes ZAP : 0 = OK, 1 = alertes/avertissements, 2 = erreur de plan. Les autres = échec.

@@ -8,7 +8,7 @@
   </div>
   <div style="display:flex;gap:8px">
     <form class="inline" method="POST" action="{{ route('targets.snapshot', $target) }}">@csrf<button class="btn" type="submit">Recapturer</button></form>
-    <form class="inline" method="POST" action="{{ route('targets.destroy', $target) }}" onsubmit="return confirm('Supprimer cette cible ?')">
+    <form class="inline" method="POST" action="{{ route('targets.destroy', $target) }}" onsubmit="return confirm('Supprimer cette cible ? Les rapports déjà archivés dans results/ restent.')">
       @csrf @method('DELETE')<button class="btn danger" type="submit">Supprimer</button></form>
   </div>
 </div>
@@ -20,7 +20,7 @@
       <img class="snap" src="{{ asset('storage/'.$target->snapshot_path) }}" alt="Capture de {{ $target->name }}">
       <div class="hint">Capturée le {{ $target->snapshot_at?->format('d/m/Y H:i') }}</div>
     @else
-      <div class="snap-empty">{{ $target->snapshot_error ? 'Capture impossible : '.$target->snapshot_error : 'Capture en cours (le worker de file doit tourner).' }}</div>
+      <div class="snap-empty">{{ $target->snapshot_error ? 'Capture impossible : '.$target->snapshot_error : 'Capture en cours… si rien n\'apparaît après une minute, relancez ./start.sh.' }}</div>
     @endif
   </div>
 
@@ -40,7 +40,11 @@
         @endforeach
       </div>
       @error('stages')<div class="err">{{ $message }}</div>@enderror
-      <div style="margin-top:16px"><button class="btn primary" type="submit">Lancer l'analyse</button></div>
+      @php $busy = $scans->first(fn ($s) => in_array($s->status, ['queued', 'running'], true)); @endphp
+      @if ($busy)
+        <div class="notice">Une analyse est déjà en cours (#{{ $busy->id }}). <a href="{{ route('scans.show', $busy) }}">Voir l'avancement</a></div>
+      @endif
+      <div style="margin-top:16px"><button class="btn primary" type="submit" {{ $busy ? 'disabled' : '' }}>Lancer l'analyse</button></div>
     </form>
     <div class="hint">Une analyse à la fois : les suivantes attendent dans la file.</div>
   </div>

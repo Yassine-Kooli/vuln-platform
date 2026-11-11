@@ -57,6 +57,9 @@ class TargetController extends Controller
 
     public function destroy(Target $target): RedirectResponse
     {
+        if ($target->scans()->whereIn('status', ['queued', 'running'])->exists()) {
+            return back()->with('status', 'Impossible de supprimer : une analyse est en cours sur cette cible.');
+        }
         if ($target->snapshot_path) {
             Storage::disk('public')->delete($target->snapshot_path);
         }

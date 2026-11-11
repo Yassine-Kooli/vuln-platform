@@ -14,6 +14,7 @@ Route::post('/targets/{target}/snapshot', [TargetController::class, 'snapshot'])
 Route::delete('/targets/{target}', [TargetController::class, 'destroy'])->name('targets.destroy');
 
 Route::post('/targets/{target}/scans', [ScanController::class, 'store'])->name('scans.store');
+Route::post('/scans/all', [ScanController::class, 'storeAll'])->name('scans.all');
 Route::get('/scans/{scan}', [ScanController::class, 'show'])->name('scans.show');
 Route::get('/scans/{scan}/status', [ScanController::class, 'status'])->name('scans.status');
 Route::get('/scans/{scan}/files/{file}', [ScanController::class, 'file'])->name('scans.file');
